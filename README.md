@@ -4,7 +4,7 @@ MS Computer Science · UT Arlington · Graduating December 2026 · [Portfolio](h
 
 ---
 
-My thesis research is on fault-tolerant control for autonomous UAV swarms. The core problem: when a standard controller like PID encounters a fault, it keeps pushing harder regardless of whether the error is from wind, a bad sensor, or a broken link. The supervisory layer I built watches the whole swarm, separates real failure conditions from normal tracking error, and changes how drones respond before the situation destabilizes. Validated across 30 randomized seeds with controlled fault injection.
+My thesis research is on fault-tolerant control for autonomous UAV swarms. The core problem: when a standard controller like PID encounters a fault, it keeps pushing harder regardless of whether the error is from wind, a bad sensor, or a broken link. The supervisory layer I built watches the whole swarm, separates real failure conditions from normal tracking error, and changes how drones respond before the situation destabilizes. Validated across 30 randomized seeds with controlled fault injection. GTA at UT Arlington - taught C and C++ programming to undergraduate students.
 
 **Paper under review · IEEE Network Magazine, 2026**
 
