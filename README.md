@@ -22,9 +22,17 @@ My research has been validated using reproducible simulation workflows, controll
 
 Alongside my research, I serve as a **Graduate Teaching Assistant** for C and C++ programming at UT Arlington, helping undergraduate students build strong software engineering fundamentals.
 
-📄 **Paper under review — IEEE Network Magazine (2026)**
+📄 **Five research manuscripts under review** at **IEEE Internet of Things Journal**, **IEEE Network Magazine**, **IEEE Transactions on Wireless Communications (TWC)**, **IEEE ISAC 2026**, and **IEEE CSCN 2026**.
 
 Currently seeking **Fall 2026 internships** in:
+
+- Autonomous Systems
+- Robotics Software
+- Robotics Simulation
+- Software Engineering
+- Perception & Localization
+
+Currently seeking JOB Role: 
 
 - Autonomous Systems
 - Robotics Software
