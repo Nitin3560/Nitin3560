@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="344" viewBox="0 0 520 344" role="img" aria-label="Terminal profile summary for Nitin Singh Rathore">
+  <defs>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="52%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#0c1f25"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .frame { fill: url(#panel); stroke: #2dd4bf; stroke-width: 1.4; }
+    .bar { fill: #101827; }
+    .dot-red { fill: #ff6b6b; }
+    .dot-yellow { fill: #ffd166; }
+    .dot-green { fill: #5eead4; }
+    .prompt { fill: #7dd3fc; font: 700 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .key { fill: #5eead4; font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .value { fill: #e5f4ff; font: 500 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .cursor { fill: #f8fafc; }
+  </style>
+  <rect x="1" y="1" width="518" height="342" rx="8" class="frame"/>
+  <rect x="2" y="2" width="516" height="46" rx="8" class="bar"/>
+  <circle cx="24" cy="24" r="6" class="dot-red"/>
+  <circle cx="44" cy="24" r="6" class="dot-yellow"/>
+  <circle cx="64" cy="24" r="6" class="dot-green"/>
+  <text x="90" y="30" class="prompt">$ whoami --verbose</text>
+  <text x="34" y="66" class="prompt" filter="url(#glow)">profile://Nitin3560</text>
+  
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.25s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="92" class="key">name</text>
+    <text x="150" y="92" class="value">Nitin Singh Rathore</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.37s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="124" class="key">role</text>
+    <text x="150" y="124" class="value">MS CS @ UT Arlington | GTA</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.49s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="156" class="key">focus</text>
+    <text x="150" y="156" class="value">Trust-aware UAV autonomy</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.61s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="188" class="key">stack</text>
+    <text x="150" y="188" class="value">ROS 2 | PX4 | Gazebo | C++ | Python</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.73s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="220" class="key">research</text>
+    <text x="150" y="220" class="value">Fault-tolerant robotics simulation</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.85s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="252" class="key">now</text>
+    <text x="150" y="252" class="value">Seeking Fall 2026 autonomy internships</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.97s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="284" class="key">signal</text>
+    <text x="150" y="284" class="value">Safe decisions under uncertainty</text>
+  </g>
+  <rect x="34" y="316" width="9" height="18" class="cursor">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
