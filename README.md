@@ -4,7 +4,7 @@
 
 # Nitin Singh Rathore
 
-**Autonomous Systems | Robotics Simulation | ROS 2 | Modern C++ | UAV Autonomy**
+**Software Engineer | Backend Systems | C++ | Python | Java**
 
 MS Computer Science @ The University of Texas at Arlington | Graduate Teaching Assistant | Graduating December 2026
 
@@ -31,73 +31,84 @@ MS Computer Science @ The University of Texas at Arlington | Graduate Teaching A
 
 ---
 
-I build autonomous systems that continue making safe decisions when the world becomes uncertain.
+I'm a software engineer with 1.5+ years of industry experience building backend services, APIs, database-driven applications, and production integrations.
 
-My work focuses on **trust-aware autonomy**, **robotics simulation**, **digital twins**, and **fault-tolerant UAV systems** using ROS 2, PX4, Gazebo, PyBullet, and modern C++.
+I'm currently pursuing my MS in Computer Science at UT Arlington, where my work has also taken me into C++ systems, distributed robotics, autonomous systems, and machine learning.
 
-During my master's thesis at UT Arlington, I designed supervisory autonomy pipelines that estimate localization integrity, distinguish environmental disturbances from genuine system faults, and adapt vehicle behavior before unreliable state estimates propagate through planning and control.
+I enjoy building software end to end: designing system components, working with APIs and databases, debugging performance and reliability problems, writing tests, and understanding how different parts of a system work together.
 
-Currently seeking **Fall 2026 internships and full-time roles** in autonomous systems, robotics software, robotics simulation, software engineering, perception, and localization.
+Currently seeking **full-time Software Engineer opportunities for Fall 2026**.
 
 ---
 
 ## Featured Projects
 
+### CareerOS
+
+**Full-stack job discovery and matching platform built around scalable ingestion, asynchronous processing, and optimized retrieval.**
+
+- FastAPI/PostgreSQL backend with Redis/RQ background workers
+- Greenhouse, Lever, and Ashby ingestion adapters across a 50-company source set
+- 3,000+ normalized job postings with persistent match caching
+- Reduced Stage-1 matching latency from ~690 ms to ~3.5 ms while scaling from ~1K to 3.2K+ jobs
+- Automated tests, duplicate detection, cache validation, and failure handling
+
+[GitHub Repository](https://github.com/Nitin3560/CareerOS)
+
 ### TwinGuard
 
-**Trust-aware autonomy framework for UAVs built on ROS 2, PX4 SITL, and Gazebo.**
+**Modular C++17/ROS 2 autonomy and fault-tolerance system for UAVs.**
 
-- Continuous trust estimation instead of binary fault detection
-- BehaviorTree.CPP mission supervision
-- Trust-aware PX4 offboard supervisor
-- Nav2 localization-aware plugins
-- Dataset replay, GoogleTest coverage, launch integration tests, and GitHub Actions CI
+- Asynchronous components for estimation, planning, navigation, and supervision
+- A* path planning, Kalman state estimation, behavior trees, and state machines
+- PX4 SITL and Gazebo end-to-end validation
+- GoogleTest, ROS 2 integration tests, Docker, and GitHub Actions CI
+- Reduced fault-recovery time by 53.8% and tracking RMSE by 49.8%
 
-[github.com/Nitin3560/TwinGuard](https://github.com/Nitin3560/TwinGuard)
+[GitHub Repository](https://github.com/Nitin3560/TwinGuard)
 
-### UAV Autonomy Research Suite
+### Distributed UAV Network Coordination
 
-**Research platform for resilient UAV autonomy, fault-tolerant control, and robotics simulation.**
+**Distributed multi-agent coordination system for UAV networks operating under communication constraints.**
 
-- Supervisory control under sensor faults, wind disturbances, and communication degradation
-- CTDE-MAPPO multi-agent reinforcement learning for adaptive relay coordination
-- Reproducible evaluation across randomized simulation seeds
-- Docker-based robotics workflow using ROS 2 Jazzy
+- CTDE-MAPPO task allocation using RLlib
+- Decentralized relay and traffic-balancing decisions
+- Scaled experiments from 5-30 UAVs
+- Improved delivery reliability from 76.3% to 92.4%
+- Evaluated under packet loss, constrained communication, traffic load, and partial failures
 
-[github.com/Nitin3560/uav-autonomy-research-suite](https://github.com/Nitin3560/uav-autonomy-research-suite)
+[GitHub Repository](https://github.com/Nitin3560/uav-autonomy-research-suite)
 
 ### Traceback AI
 
-**Root cause analysis system for distributed microservice failures.**
+**Causal failure-analysis system for distributed microservices.**
 
-- FastAPI backend for logs, metrics, and deployment events
+- FastAPI telemetry ingestion across 10+ services
 - Graph-based failure propagation tracing
-- Z-score anomaly detection and multi-factor root cause ranking
+- Time-window correlation and Z-score anomaly detection
+- Multi-factor root-cause ranking
+- Correct root cause surfaced in the top 3 for 87% of evaluation scenarios
 
-[github.com/Nitin3560/traceback-ai](https://github.com/Nitin3560/traceback-ai)
-
-### JobPrep AI
-
-**Offline conversational RAG assistant for personalized job application support.**
-
-- LlamaIndex semantic search
-- Local inference through Ollama
-- Incremental embedding pipeline and GCP deployment
-
-[github.com/Nitin3560/JobPrep-AI-Conversational-RAG-Document-Assistant](https://github.com/Nitin3560/JobPrep-AI-Conversational-RAG-Document-Assistant)
+[GitHub Repository](https://github.com/Nitin3560/traceback-ai)
 
 ---
 
 ## Technical Focus
 
-**Autonomous systems and robotics:** ROS 2, PX4, Gazebo Harmonic, Nav2, BehaviorTree.CPP, PyBullet
+**Languages:** C++, Java, Python, JavaScript/TypeScript
 
-**Software engineering:** C++17, Python, Docker, GitHub Actions, GoogleTest, FastAPI, PostgreSQL
+**Backend & Systems:** FastAPI, REST APIs, PostgreSQL, Redis, Linux/Unix, Docker
 
-**AI and machine learning:** PyTorch, RLlib, LlamaIndex, Ollama, multi-agent reinforcement learning
+**Software Engineering:** Data Structures & Algorithms, Git, GitHub Actions, CI/CD, GoogleTest, JUnit, pytest
 
-**Research interests:** localization integrity, state estimation, digital twins, motion planning, distributed robotic systems, resilient autonomy
+**Robotics & Distributed Systems:** ROS 2, PX4, Gazebo, RLlib, multi-agent systems
+
+**AI/ML:** PyTorch, reinforcement learning, LLM integration
 
 ---
 
-> Good autonomy is not just about making the right decision. It is about making the safest decision when the system is no longer certain.
+## Research
+
+**IEEE CSCN 2026** - *Integrity-Aware Digital Twin Synchronization for ISAC-Enabled UAV Networks* - Accepted
+
+**M.S. Thesis** - *Cross-Layer Supervisory Control for Low-Altitude UAV Swarm Networks* - Defended May 2026

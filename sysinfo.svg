@@ -45,27 +45,32 @@
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="0.49s" dur="0.24s" fill="freeze"/>
     <text x="34" y="156" class="key">focus</text>
-    <text x="150" y="156" class="value">Trust-aware UAV autonomy</text>
+    <text x="150" y="156" class="value">Backend systems and APIs</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="0.61s" dur="0.24s" fill="freeze"/>
     <text x="34" y="188" class="key">stack</text>
-    <text x="150" y="188" class="value">ROS 2 | PX4 | Gazebo | C++ | Python</text>
+    <text x="150" y="188" class="value">C++ | Python | Java | FastAPI</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="0.73s" dur="0.24s" fill="freeze"/>
-    <text x="34" y="220" class="key">research</text>
-    <text x="150" y="220" class="value">Fault-tolerant robotics simulation</text>
+    <text x="34" y="220" class="key">data</text>
+    <text x="150" y="220" class="value">PostgreSQL | Redis | RQ</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="0.85s" dur="0.24s" fill="freeze"/>
-    <text x="34" y="252" class="key">now</text>
-    <text x="150" y="252" class="value">Seeking Fall 2026 autonomy internships</text>
+    <text x="34" y="252" class="key">systems</text>
+    <text x="150" y="252" class="value">Linux | Docker | GitHub Actions</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" from="0" to="1" begin="0.97s" dur="0.24s" fill="freeze"/>
-    <text x="34" y="284" class="key">signal</text>
-    <text x="150" y="284" class="value">Safe decisions under uncertainty</text>
+    <text x="34" y="284" class="key">now</text>
+    <text x="150" y="284" class="value">Seeking Fall 2026 SWE roles</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="1.09s" dur="0.24s" fill="freeze"/>
+    <text x="34" y="316" class="key">plus</text>
+    <text x="150" y="316" class="value">Robotics | autonomy | ML</text>
   </g>
   <rect x="34" y="316" width="9" height="18" class="cursor">
     <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>

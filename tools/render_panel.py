@@ -13,11 +13,12 @@ OUT = ROOT / "sysinfo.svg"
 ROWS = [
     ("name", "Nitin Singh Rathore"),
     ("role", "MS CS @ UT Arlington | GTA"),
-    ("focus", "Trust-aware UAV autonomy"),
-    ("stack", "ROS 2 | PX4 | Gazebo | C++ | Python"),
-    ("research", "Fault-tolerant robotics simulation"),
-    ("now", "Seeking Fall 2026 autonomy internships"),
-    ("signal", "Safe decisions under uncertainty"),
+    ("focus", "Backend systems and APIs"),
+    ("stack", "C++ | Python | Java | FastAPI"),
+    ("data", "PostgreSQL | Redis | RQ"),
+    ("systems", "Linux | Docker | GitHub Actions"),
+    ("now", "Seeking Fall 2026 SWE roles"),
+    ("plus", "Robotics | autonomy | ML"),
 ]
 
 
