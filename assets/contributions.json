@@ -1,8 +1,8 @@
 {
   "username": "Nitin3560",
-  "fetched_at": "2026-08-19T05:24:21Z",
-  "total": 1906,
-  "current_streak": 0,
+  "fetched_at": "2026-08-20T05:25:14Z",
+  "total": 1910,
+  "current_streak": 9,
   "longest_streak": 91,
   "busiest_weekday": "Friday",
   "top_day": {
@@ -1280,8 +1280,8 @@
     },
     {
       "date": "2026-08-19",
-      "count": 0,
-      "level": 0,
+      "count": 3,
+      "level": 1,
       "weekday": "Wednesday"
     },
     {
@@ -1594,6 +1594,12 @@
       "date": "2026-08-13",
       "count": 11,
       "level": 2,
+      "weekday": "Thursday"
+    },
+    {
+      "date": "2026-08-20",
+      "count": 1,
+      "level": 1,
       "weekday": "Thursday"
     },
     {
