@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="190" viewBox="0 0 680 190" role="img" aria-label="GitHub achievements">
+  <style>
+    .card { fill: #0d1117; stroke: #30363d; stroke-width: 1.2; }
+    .badge { fill: #39d353; font: 800 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .title { fill: #e6edf3; font: 800 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .detail { fill: #8b949e; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+  <g><g>
+  <rect x="28" y="44" width="190" height="118" rx="8" class="card"/>
+  <text x="46" y="82" class="badge">◆</text>
+  <text x="72" y="82" class="title">Commit Engine</text>
+  <text x="46" y="124" class="detail">1,983 contributions in one year</text>
+</g><g>
+  <rect x="238" y="44" width="190" height="118" rx="8" class="card"/>
+  <text x="256" y="82" class="badge">◆</text>
+  <text x="282" y="82" class="title">Long Runner</text>
+  <text x="256" y="124" class="detail">91-day longest streak</text>
+</g><g>
+  <rect x="448" y="44" width="190" height="118" rx="8" class="card"/>
+  <text x="466" y="82" class="badge">◆</text>
+  <text x="492" y="82" class="title">Peak Day</text>
+  <text x="466" y="124" class="detail">61 contributions on the top day</text>
+</g></g>
+</svg>

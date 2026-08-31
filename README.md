@@ -69,6 +69,10 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 
 ## `~/` contribution calendar
 
+<img src="assets/metrics.isocalendar.svg" width="90%" alt="3D isometric contribution calendar">
+
+<br><br>
+
 <img src="graph.svg" width="95%" alt="animated GitHub contribution graph">
 
 </div>
@@ -80,18 +84,18 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 ## `~/` the numbers
 
 <picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=Nitin3560&show_icons=true&theme=github_dark&hide_border=true&title_color=39D353&icon_color=39D353&text_color=C9D1D9&bg_color=0D1117"
-    media="(prefers-color-scheme: dark)">
-  <source
-    srcset="https://github-readme-stats.vercel.app/api?username=Nitin3560&show_icons=true&theme=default&hide_border=true&title_color=238636&icon_color=238636"
-    media="(prefers-color-scheme: light)">
-  <img src="https://github-readme-stats.vercel.app/api?username=Nitin3560&show_icons=true&theme=github_dark&hide_border=true&title_color=39D353&icon_color=39D353&text_color=C9D1D9&bg_color=0D1117" width="480" alt="GitHub statistics">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
+  <img src="assets/card-stats-dark.svg" width="520" alt="GitHub statistics">
 </picture>
+
+<br>
+
+<img src="assets/metrics.languages.svg" width="520" alt="most used languages">
 
 <br><br>
 
-<img src="https://github-profile-trophy.vercel.app/?username=Nitin3560&theme=matrix&no-frame=true&no-bg=true&margin-w=12&row=1" width="90%" alt="GitHub achievements">
+<img src="assets/metrics.achievements.svg" width="90%" alt="GitHub achievements">
 
 </div>
 
