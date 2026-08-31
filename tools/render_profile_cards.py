@@ -90,9 +90,9 @@ def project_card(name: str, focus: str, stack: str, detail: str) -> str:
 
 
 def radar_card(filename: str, title: str, rows: list[tuple[str, int]]) -> None:
-    width = height = 400
-    center = 200
-    max_radius = 128
+    width, height = 420, 320
+    center_x, center_y = 210, 196
+    max_radius = 74
     points = []
     axes = []
     rings = []
@@ -102,38 +102,44 @@ def radar_card(filename: str, title: str, rows: list[tuple[str, int]]) -> None:
         ring_points = []
         for index in range(len(rows)):
             angle = -math.pi / 2 + index * 2 * math.pi / len(rows)
-            ring_points.append(f"{center + math.cos(angle) * radius:.1f},{center + math.sin(angle) * radius:.1f}")
+            ring_points.append(f"{center_x + math.cos(angle) * radius:.1f},{center_y + math.sin(angle) * radius:.1f}")
         rings.append(f'<polygon points="{" ".join(ring_points)}" class="ring"/>')
 
     for index, (label, value) in enumerate(rows):
         angle = -math.pi / 2 + index * 2 * math.pi / len(rows)
-        x = center + math.cos(angle) * max_radius
-        y = center + math.sin(angle) * max_radius
-        lx = center + math.cos(angle) * (max_radius + 34)
-        ly = center + math.sin(angle) * (max_radius + 28)
-        points.append(f"{center + math.cos(angle) * max_radius * value / 100:.1f},{center + math.sin(angle) * max_radius * value / 100:.1f}")
-        axes.append(f'<line x1="{center}" y1="{center}" x2="{x:.1f}" y2="{y:.1f}" class="axis"/>')
+        x = center_x + math.cos(angle) * max_radius
+        y = center_y + math.sin(angle) * max_radius
+        lx = center_x + math.cos(angle) * (max_radius + 42)
+        ly = center_y + math.sin(angle) * (max_radius + 30)
+        points.append(f"{center_x + math.cos(angle) * max_radius * value / 100:.1f},{center_y + math.sin(angle) * max_radius * value / 100:.1f}")
+        axes.append(f'<line x1="{center_x}" y1="{center_y}" x2="{x:.1f}" y2="{y:.1f}" class="axis"/>')
         axes.append(f'<text x="{lx:.1f}" y="{ly:.1f}" text-anchor="middle" class="label">{html.escape(label)}</text>')
 
+    short_title = title.removeprefix("cat ").removesuffix(".json")
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{html.escape(title)}">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0f1f1d"/>
-      <stop offset="100%" stop-color="#020617"/>
-    </radialGradient>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="62%" stop-color="#08111f"/>
+      <stop offset="100%" stop-color="#0d1f18"/>
+    </linearGradient>
   </defs>
   <style>
     .panel {{ fill: url(#bg); stroke: #30363d; stroke-width: 1.2; }}
-    .title {{ fill: #39d353; font: 700 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .title {{ fill: #39d353; font: 800 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .sub {{ fill: #8b949e; font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
     .ring {{ fill: none; stroke: #30363d; stroke-width: 1; }}
-    .axis {{ stroke: #30363d; stroke-width: 1; }}
-    .shape {{ fill: rgba(57, 211, 83, 0.22); stroke: #39d353; stroke-width: 2; }}
-    .label {{ fill: #c9d1d9; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .axis {{ stroke: #30363d; stroke-width: 0.9; }}
+    .shape {{ fill: rgba(57, 211, 83, 0.24); stroke: #39d353; stroke-width: 2.4; }}
+    .label {{ fill: #c9d1d9; font: 800 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .center {{ fill: #39d353; opacity: 0.85; }}
   </style>
   <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="8" class="panel"/>
-  <text x="24" y="34" class="title">$ {html.escape(title)}</text>
+  <text x="26" y="40" class="title">~/ {html.escape(short_title)}</text>
+  <text x="26" y="60" class="sub">self-rated operating range</text>
   <g>{''.join(rings)}{''.join(axes)}</g>
   <polygon points="{' '.join(points)}" class="shape"/>
+  <circle cx="{center_x}" cy="{center_y}" r="3.5" class="center"/>
 </svg>
 '''
     write(ASSETS / filename, svg)
