@@ -116,14 +116,14 @@ def render_languages() -> None:
     write(ASSETS / "metrics.languages.svg", svg)
 
 
-def iso_point(col: int, row: int, cell: float = 15.8) -> tuple[float, float]:
-    return 110 + (col - row) * cell * 0.82, 170 + (col + row) * cell * 0.42
+def iso_point(col: int, row: int, cell: float = 18.6) -> tuple[float, float]:
+    return 76 + (col - row) * cell * 0.82, 174 + (col + row) * cell * 0.42
 
 
 def cube(x: float, y: float, h: float, color: str) -> str:
-    half_w = 14
-    half_h = 7.5
-    full_h = 15
+    half_w = 16
+    half_h = 8.8
+    full_h = 17.6
     top = f"{x:.1f},{y - h:.1f} {x + half_w:.1f},{y - h + half_h:.1f} {x:.1f},{y - h + full_h:.1f} {x - half_w:.1f},{y - h + half_h:.1f}"
     left = f"{x - half_w:.1f},{y - h + half_h:.1f} {x:.1f},{y - h + full_h:.1f} {x:.1f},{y + full_h:.1f} {x - half_w:.1f},{y + half_h:.1f}"
     right = f"{x:.1f},{y - h + full_h:.1f} {x + half_w:.1f},{y - h + half_h:.1f} {x + half_w:.1f},{y + half_h:.1f} {x:.1f},{y + full_h:.1f}"
@@ -149,14 +149,14 @@ def render_isocalendar(payload: dict[str, object]) -> None:
         color = GREEN[level]
         x, y = iso_point(week, weekday)
         if count:
-            cells.append(cube(x, y, min(82, 8 + count * 0.92), color))
+            cells.append(cube(x, y, min(128, 10 + count * 1.35), color))
         else:
-            top = f"{x:.1f},{y:.1f} {x + 14:.1f},{y + 7.5:.1f} {x:.1f},{y + 15:.1f} {x - 14:.1f},{y + 7.5:.1f}"
+            top = f"{x:.1f},{y:.1f} {x + 16:.1f},{y + 8.8:.1f} {x:.1f},{y + 17.6:.1f} {x - 16:.1f},{y + 8.8:.1f}"
             cells.append(f'<polygon points="{top}" fill="#d1d5db" opacity="0.92"/>')
 
     average = total / max(1, len(days))
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
   <style>
     .heading {{ fill: #39d353; font: 700 34px Arial, Helvetica, sans-serif; }}
     .meta-title {{ fill: #39d353; font: 700 26px Arial, Helvetica, sans-serif; }}
@@ -164,12 +164,12 @@ def render_isocalendar(payload: dict[str, object]) -> None:
     .track {{ fill: #014421; }}
   </style>
   <text x="70" y="64" class="heading">contributions calendar</text>
-  <text x="850" y="124" class="meta-title">Commit streaks</text>
-  <text x="850" y="160" class="meta">Current streak {current} days</text>
-  <text x="850" y="194" class="meta">Best streak {longest} days</text>
-  <text x="850" y="268" class="meta-title">Commits per day</text>
-  <text x="850" y="304" class="meta">Highest in a day at {top_count}</text>
-  <text x="850" y="338" class="meta">Average per day at ~{average:.2f}</text>
+  <text x="930" y="124" class="meta-title">Commit streaks</text>
+  <text x="930" y="160" class="meta">Current streak {current} days</text>
+  <text x="930" y="194" class="meta">Best streak {longest} days</text>
+  <text x="930" y="268" class="meta-title">Commits per day</text>
+  <text x="930" y="304" class="meta">Highest in a day at {top_count}</text>
+  <text x="930" y="338" class="meta">Average per day at ~{average:.2f}</text>
   <g>{''.join(cells)}</g>
 </svg>
 '''
