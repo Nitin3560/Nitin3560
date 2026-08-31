@@ -1,114 +1,150 @@
 <div align="center">
 
-<h3><code>$ cat /home/nitin/profile</code></h3>
-
-# Nitin Singh Rathore
-
-**Software Engineer | Backend Systems | C++ | Python | Java**
-
-MS Computer Science @ The University of Texas at Arlington | Graduate Teaching Assistant | Graduating December 2026
-
-<a href="https://nitinsinghrathore.us">Portfolio</a> |
-<a href="https://linkedin.com/in/nitin-singh-rathore">LinkedIn</a> |
-<a href="mailto:nxr3560@mavs.uta.edu">Email</a>
+<img src="portrait.svg" width="300" alt="Nitin Singh Rathore, rendered as a terminal-style portrait">
 
 <br>
 
-<img src="./graph.svg" width="880" alt="Animated GitHub contribution graph" />
+<a href="https://github.com/Nitin3560">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=760&lines=Nitin+Singh+Rathore;MS+Computer+Science+%40+UT+Arlington;Backend+Systems+%2B+Autonomy;C%2B%2B+%7C+Python+%7C+Java" alt="typing banner">
+</a>
 
-<br><br>
+<br>
 
-<h3><code>$ whoami --verbose</code></h3>
+<a href="https://linkedin.com/in/nitin-singh-rathore"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:nxr3560@mavs.uta.edu"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://nitinsinghrathore.us"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+<a href="https://github.com/Nitin3560"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<img src="https://komarev.com/ghpvc/?username=Nitin3560&style=flat&color=39d353&label=profile+views" alt="profile views">
+
+</div>
+
+---
+
+## `~/` whoami
+
+```console
+$ cat about.txt
+```
+
+Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and simulation tooling for problems where reliability actually matters.
+
+- MS Computer Science @ **The University of Texas at Arlington**, graduating **December 2026**
+- Graduate Teaching Assistant for **C and C++ programming**
+- Researching **fault-tolerant control for autonomous UAV swarms**
+- Currently seeking **Fall 2026 internships** in autonomy engineering, robotics simulation, or software engineering
+- Paper accepted: **IEEE CSCN 2026**, *Integrity-Aware Digital Twin Synchronization for ISAC-Enabled UAV Networks*
+
+<br>
+
+<div align="center">
+
+## `~/` toolbox
+
+<img src="https://skillicons.dev/icons?i=cpp,python,java,js,ts,react,nodejs,fastapi,postgres,redis,docker,linux,git,github,githubactions,gcp,aws,pytorch&perline=9" alt="tech stack">
+
+</div>
+
+---
+
+<div align="center">
+
+## `~/` skill radar
 
 <table>
-  <tr>
-    <td valign="top"><img src="./portrait.svg" width="420" alt="Animated ASCII identity portrait" /></td>
-    <td valign="top"><img src="./sysinfo.svg" width="520" alt="Terminal profile summary" /></td>
-  </tr>
+<tr>
+<td width="50%" align="center" valign="middle">
+  <img src="assets/radar-skills.svg" width="400" alt="skill radar chart">
+</td>
+<td width="50%" align="center" valign="middle">
+  <img src="assets/radar-langs.svg" width="400" alt="language radar chart">
+</td>
+</tr>
 </table>
 
 </div>
 
 ---
 
-I'm a software engineer with 1.5+ years of industry experience building backend services, APIs, database-driven applications, and production integrations.
+<div align="center">
 
-I'm currently pursuing my MS in Computer Science at UT Arlington, where my work has also taken me into C++ systems, distributed robotics, autonomous systems, and machine learning.
+## `~/` contribution calendar
 
-I enjoy building software end to end: designing system components, working with APIs and databases, debugging performance and reliability problems, writing tests, and understanding how different parts of a system work together.
+<img src="graph.svg" width="95%" alt="animated GitHub contribution graph">
 
-Currently seeking **full-time Software Engineer opportunities for Fall 2026**.
-
----
-
-## Featured Projects
-
-### CareerOS
-
-**Full-stack job discovery and matching platform built around scalable ingestion, asynchronous processing, and optimized retrieval.**
-
-- FastAPI/PostgreSQL backend with Redis/RQ background workers
-- Greenhouse, Lever, and Ashby ingestion adapters across a 50-company source set
-- 3,000+ normalized job postings with persistent match caching
-- Reduced Stage-1 matching latency from ~690 ms to ~3.5 ms while scaling from ~1K to 3.2K+ jobs
-- Automated tests, duplicate detection, cache validation, and failure handling
-
-[GitHub Repository](https://github.com/Nitin3560/CareerOS)
-
-### TwinGuard
-
-**Modular C++17/ROS 2 autonomy and fault-tolerance system for UAVs.**
-
-- Asynchronous components for estimation, planning, navigation, and supervision
-- A* path planning, Kalman state estimation, behavior trees, and state machines
-- PX4 SITL and Gazebo end-to-end validation
-- GoogleTest, ROS 2 integration tests, Docker, and GitHub Actions CI
-- Reduced fault-recovery time by 53.8% and tracking RMSE by 49.8%
-
-[GitHub Repository](https://github.com/Nitin3560/TwinGuard)
-
-### Distributed UAV Network Coordination
-
-**Distributed multi-agent coordination system for UAV networks operating under communication constraints.**
-
-- CTDE-MAPPO task allocation using RLlib
-- Decentralized relay and traffic-balancing decisions
-- Scaled experiments from 5-30 UAVs
-- Improved delivery reliability from 76.3% to 92.4%
-- Evaluated under packet loss, constrained communication, traffic load, and partial failures
-
-[GitHub Repository](https://github.com/Nitin3560/uav-autonomy-research-suite)
-
-### Traceback AI
-
-**Causal failure-analysis system for distributed microservices.**
-
-- FastAPI telemetry ingestion across 10+ services
-- Graph-based failure propagation tracing
-- Time-window correlation and Z-score anomaly detection
-- Multi-factor root-cause ranking
-- Correct root cause surfaced in the top 3 for 87% of evaluation scenarios
-
-[GitHub Repository](https://github.com/Nitin3560/traceback-ai)
+</div>
 
 ---
 
-## Technical Focus
+<div align="center">
 
-**Languages:** C++, Java, Python, JavaScript/TypeScript
+## `~/` the numbers
 
-**Backend & Systems:** FastAPI, REST APIs, PostgreSQL, Redis, Linux/Unix, Docker
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=Nitin3560&show_icons=true&theme=github_dark&hide_border=true&title_color=39D353&icon_color=39D353&text_color=C9D1D9&bg_color=0D1117"
+    media="(prefers-color-scheme: dark)">
+  <source
+    srcset="https://github-readme-stats.vercel.app/api?username=Nitin3560&show_icons=true&theme=default&hide_border=true&title_color=238636&icon_color=238636"
+    media="(prefers-color-scheme: light)">
+  <img src="https://github-readme-stats.vercel.app/api?username=Nitin3560&show_icons=true&theme=github_dark&hide_border=true&title_color=39D353&icon_color=39D353&text_color=C9D1D9&bg_color=0D1117" width="480" alt="GitHub statistics">
+</picture>
 
-**Software Engineering:** Data Structures & Algorithms, Git, GitHub Actions, CI/CD, GoogleTest, JUnit, pytest
+<br><br>
 
-**Robotics & Distributed Systems:** ROS 2, PX4, Gazebo, RLlib, multi-agent systems
+<img src="https://github-profile-trophy.vercel.app/?username=Nitin3560&theme=matrix&no-frame=true&no-bg=true&margin-w=12&row=1" width="90%" alt="GitHub achievements">
 
-**AI/ML:** PyTorch, reinforcement learning, LLM integration
+</div>
 
 ---
 
-## Research
+<div align="center">
 
-**IEEE CSCN 2026** - *Integrity-Aware Digital Twin Synchronization for ISAC-Enabled UAV Networks* - Accepted
+## `~/` selected work
 
-**M.S. Thesis** - *Cross-Layer Supervisory Control for Low-Altitude UAV Swarm Networks* - Defended May 2026
+<table>
+<tr>
+<td width="50%">
+  <a href="https://github.com/Nitin3560/CareerOS">
+    <img src="assets/card-careeros.svg" width="420" alt="CareerOS">
+  </a>
+</td>
+<td width="50%">
+  <a href="https://github.com/Nitin3560/TwinGuard">
+    <img src="assets/card-twinguard.svg" width="420" alt="TwinGuard">
+  </a>
+</td>
+</tr>
+<tr>
+<td width="50%">
+  <a href="https://github.com/Nitin3560/uav-autonomy-research-suite">
+    <img src="assets/card-uav-autonomy-research-suite.svg" width="420" alt="UAV Autonomy Research Suite">
+  </a>
+</td>
+<td width="50%">
+  <a href="https://github.com/Nitin3560/traceback-ai">
+    <img src="assets/card-traceback-ai.svg" width="420" alt="Traceback AI">
+  </a>
+</td>
+</tr>
+</table>
+
+<sub>
+
+| project | focus | stack |
+|---|---|---|
+| **[CareerOS](https://github.com/Nitin3560/CareerOS)** | job discovery, matching, ingestion, retrieval | `FastAPI` `PostgreSQL` `Redis` `Python` |
+| **[TwinGuard](https://github.com/Nitin3560/TwinGuard)** | modular autonomy and fault tolerance for UAVs | `C++17` `ROS 2` `PX4` `Gazebo` |
+| **[UAV Autonomy Research Suite](https://github.com/Nitin3560/uav-autonomy-research-suite)** | fault-aware supervisory control and multi-agent RL | `Python` `RLlib` `Docker` `ROS 2` |
+| **[Traceback AI](https://github.com/Nitin3560/traceback-ai)** | root-cause analysis for distributed microservices | `FastAPI` `Graphs` `Anomaly Detection` |
+
+</sub>
+
+</div>
+
+---
+
+<div align="center">
+
+<sub>`01110100 01101000 01100001 01101110 01101011 01110011 00100000 01100110 01101111 01110010 00100000 01110011 01100011 01110010 01101111 01101100 01101100 01101001 01101110 01100111`</sub>
+
+</div>
