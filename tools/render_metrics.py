@@ -116,14 +116,14 @@ def render_languages() -> None:
     write(ASSETS / "metrics.languages.svg", svg)
 
 
-def iso_point(col: int, row: int, cell: float = 13.2) -> tuple[float, float]:
-    return 128 + (col - row) * cell * 0.82, 202 + (col + row) * cell * 0.42
+def iso_point(col: int, row: int, cell: float = 15.8) -> tuple[float, float]:
+    return 110 + (col - row) * cell * 0.82, 170 + (col + row) * cell * 0.42
 
 
 def cube(x: float, y: float, h: float, color: str) -> str:
-    half_w = 11
-    half_h = 6
-    full_h = 12
+    half_w = 14
+    half_h = 7.5
+    full_h = 15
     top = f"{x:.1f},{y - h:.1f} {x + half_w:.1f},{y - h + half_h:.1f} {x:.1f},{y - h + full_h:.1f} {x - half_w:.1f},{y - h + half_h:.1f}"
     left = f"{x - half_w:.1f},{y - h + half_h:.1f} {x:.1f},{y - h + full_h:.1f} {x:.1f},{y + full_h:.1f} {x - half_w:.1f},{y + half_h:.1f}"
     right = f"{x:.1f},{y - h + full_h:.1f} {x + half_w:.1f},{y - h + half_h:.1f} {x + half_w:.1f},{y + half_h:.1f} {x:.1f},{y + full_h:.1f}"
@@ -149,27 +149,27 @@ def render_isocalendar(payload: dict[str, object]) -> None:
         color = GREEN[level]
         x, y = iso_point(week, weekday)
         if count:
-            cells.append(cube(x, y, min(48, 6 + count * 0.68), color))
+            cells.append(cube(x, y, min(82, 8 + count * 0.92), color))
         else:
-            top = f"{x:.1f},{y:.1f} {x + 11:.1f},{y + 6:.1f} {x:.1f},{y + 12:.1f} {x - 11:.1f},{y + 6:.1f}"
+            top = f"{x:.1f},{y:.1f} {x + 14:.1f},{y + 7.5:.1f} {x:.1f},{y + 15:.1f} {x - 14:.1f},{y + 7.5:.1f}"
             cells.append(f'<polygon points="{top}" fill="#d1d5db" opacity="0.92"/>')
 
     average = total / max(1, len(days))
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="620" viewBox="0 0 1280 620" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
   <style>
-    .heading {{ fill: #39d353; font: 700 30px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .meta-title {{ fill: #39d353; font: 700 23px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .meta {{ fill: #8b949e; font: 600 20px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .heading {{ fill: #39d353; font: 700 34px Arial, Helvetica, sans-serif; }}
+    .meta-title {{ fill: #39d353; font: 700 26px Arial, Helvetica, sans-serif; }}
+    .meta {{ fill: #8b949e; font: 600 22px Arial, Helvetica, sans-serif; }}
     .track {{ fill: #014421; }}
   </style>
-  <text x="82" y="58" class="heading">$ contributions.calendar</text>
-  <text x="790" y="112" class="meta-title">Commits streaks</text>
-  <text x="790" y="145" class="meta">Current streak {current} days</text>
-  <text x="790" y="176" class="meta">Best streak {longest} days</text>
-  <text x="790" y="238" class="meta-title">Commits per day</text>
-  <text x="790" y="271" class="meta">Highest in a day at {top_count}</text>
-  <text x="790" y="302" class="meta">Average per day at ~{average:.2f}</text>
+  <text x="70" y="64" class="heading">contributions calendar</text>
+  <text x="850" y="124" class="meta-title">Commit streaks</text>
+  <text x="850" y="160" class="meta">Current streak {current} days</text>
+  <text x="850" y="194" class="meta">Best streak {longest} days</text>
+  <text x="850" y="268" class="meta-title">Commits per day</text>
+  <text x="850" y="304" class="meta">Highest in a day at {top_count}</text>
+  <text x="850" y="338" class="meta">Average per day at ~{average:.2f}</text>
   <g>{''.join(cells)}</g>
 </svg>
 '''

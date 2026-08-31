@@ -69,7 +69,7 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 
 ## `~/` contribution calendar
 
-<img src="assets/metrics.isocalendar.svg" width="90%" alt="3D isometric contribution calendar">
+<img src="assets/metrics.isocalendar.svg" width="100%" alt="3D isometric contribution calendar">
 
 <br><br>
 
