@@ -86,12 +86,12 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
-  <img src="assets/card-stats-dark.svg" width="520" alt="GitHub statistics">
+  <img src="assets/card-stats-dark.svg" width="560" alt="GitHub statistics">
 </picture>
 
 <br>
 
-<img src="assets/metrics.languages.svg" width="520" alt="most used languages">
+<img src="assets/metrics.languages.svg" width="560" alt="most used languages">
 
 </div>
 
