@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="0 0 420 320" role="img" aria-label="cat language-radar.json">
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="430" viewBox="0 0 520 430" role="img" aria-label="Nitin3560 - language mix">
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#020617"/>
@@ -8,18 +8,19 @@
   </defs>
   <style>
     .panel { fill: url(#bg); stroke: #30363d; stroke-width: 1.2; }
-    .title { fill: #39d353; font: 800 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .sub { fill: #8b949e; font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .title { fill: #e6edf3; font: 800 15px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
     .ring { fill: none; stroke: #30363d; stroke-width: 1; }
     .axis { stroke: #30363d; stroke-width: 0.9; }
-    .shape { fill: rgba(57, 211, 83, 0.24); stroke: #39d353; stroke-width: 2.4; }
-    .label { fill: #c9d1d9; font: 800 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .shape { fill: rgba(57, 211, 83, 0.26); stroke: #39d353; stroke-width: 2.4; }
+    .point { fill: #57e36d; }
+    .label { fill: #c9d1d9; font: 800 12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .value { fill: #8b949e; font: 600 10px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
     .center { fill: #39d353; opacity: 0.85; }
   </style>
-  <rect x="1" y="1" width="418" height="318" rx="8" class="panel"/>
-  <text x="26" y="40" class="title">~/ language-radar</text>
-  <text x="26" y="60" class="sub">self-rated operating range</text>
-  <g><polygon points="210.0,177.5 226.0,186.8 226.0,205.2 210.0,214.5 194.0,205.2 194.0,186.8" class="ring"/><polygon points="210.0,159.0 242.0,177.5 242.0,214.5 210.0,233.0 178.0,214.5 178.0,177.5" class="ring"/><polygon points="210.0,140.5 258.1,168.2 258.1,223.8 210.0,251.5 161.9,223.8 161.9,168.2" class="ring"/><polygon points="210.0,122.0 274.1,159.0 274.1,233.0 210.0,270.0 145.9,233.0 145.9,159.0" class="ring"/><line x1="210" y1="196" x2="210.0" y2="122.0" class="axis"/><text x="210.0" y="92.0" text-anchor="middle" class="label">Python</text><line x1="210" y1="196" x2="274.1" y2="159.0" class="axis"/><text x="310.5" y="144.0" text-anchor="middle" class="label">C++</text><line x1="210" y1="196" x2="274.1" y2="233.0" class="axis"/><text x="310.5" y="248.0" text-anchor="middle" class="label">Java</text><line x1="210" y1="196" x2="210.0" y2="270.0" class="axis"/><text x="210.0" y="300.0" text-anchor="middle" class="label">TypeScript</text><line x1="210" y1="196" x2="145.9" y2="233.0" class="axis"/><text x="109.5" y="248.0" text-anchor="middle" class="label">Shell</text><line x1="210" y1="196" x2="145.9" y2="159.0" class="axis"/><text x="109.5" y="144.0" text-anchor="middle" class="label">SQL</text></g>
-  <polygon points="210.0,125.7 266.4,163.4 258.7,224.1 210.0,247.8 170.3,218.9 160.0,167.1" class="shape"/>
-  <circle cx="210" cy="196" r="3.5" class="center"/>
+  <rect x="1" y="1" width="518" height="428" rx="0" class="panel"/>
+  <text x="260" y="44" text-anchor="middle" class="title">Nitin3560 - language mix</text>
+  <g><polygon points="260.0,191.5 284.4,201.6 294.5,226.0 284.4,250.4 260.0,260.5 235.6,250.4 225.5,226.0 235.6,201.6" class="ring"/><polygon points="260.0,157.0 308.8,177.2 329.0,226.0 308.8,274.8 260.0,295.0 211.2,274.8 191.0,226.0 211.2,177.2" class="ring"/><polygon points="260.0,122.5 333.2,152.8 363.5,226.0 333.2,299.2 260.0,329.5 186.8,299.2 156.5,226.0 186.8,152.8" class="ring"/><polygon points="260.0,88.0 357.6,128.4 398.0,226.0 357.6,323.6 260.0,364.0 162.4,323.6 122.0,226.0 162.4,128.4" class="ring"/><line x1="260" y1="226" x2="260.0" y2="88.0" class="axis"/><text x="260.0" y="54.0" text-anchor="middle" class="label">Python</text><text x="260.0" y="71.0" text-anchor="middle" class="value">2.10 MB</text><line x1="260" y1="226" x2="357.6" y2="128.4" class="axis"/><text x="391.5" y="104.4" text-anchor="start" class="label">C++</text><text x="391.5" y="121.4" text-anchor="start" class="value">1.25 MB</text><line x1="260" y1="226" x2="398.0" y2="226.0" class="axis"/><text x="446.0" y="226.0" text-anchor="start" class="label">Java</text><text x="446.0" y="243.0" text-anchor="start" class="value">612 kB</text><line x1="260" y1="226" x2="357.6" y2="323.6" class="axis"/><text x="391.5" y="347.6" text-anchor="start" class="label">TypeScript</text><text x="391.5" y="364.6" text-anchor="start" class="value">410 kB</text><line x1="260" y1="226" x2="260.0" y2="364.0" class="axis"/><text x="260.0" y="398.0" text-anchor="middle" class="label">JavaScript</text><text x="260.0" y="415.0" text-anchor="middle" class="value">230 kB</text><line x1="260" y1="226" x2="162.4" y2="323.6" class="axis"/><text x="128.5" y="347.6" text-anchor="end" class="label">Shell</text><text x="128.5" y="364.6" text-anchor="end" class="value">96 kB</text><line x1="260" y1="226" x2="122.0" y2="226.0" class="axis"/><text x="74.0" y="226.0" text-anchor="end" class="label">CMake</text><text x="74.0" y="243.0" text-anchor="end" class="value">51 kB</text><line x1="260" y1="226" x2="162.4" y2="128.4" class="axis"/><text x="128.5" y="104.4" text-anchor="end" class="label">HTML</text><text x="128.5" y="121.4" text-anchor="end" class="value">24 kB</text></g>
+  <polygon points="260.0,88.0 318.5,167.5 300.2,226.0 279.0,245.0 260.0,241.2 255.5,230.5 256.7,226.0 258.9,224.9" class="shape"/>
+  <g><circle cx="260.0" cy="88.0" r="3.8" class="point"/><circle cx="318.5" cy="167.5" r="3.8" class="point"/><circle cx="300.2" cy="226.0" r="3.8" class="point"/><circle cx="279.0" cy="245.0" r="3.8" class="point"/><circle cx="260.0" cy="241.2" r="3.8" class="point"/><circle cx="255.5" cy="230.5" r="3.8" class="point"/><circle cx="256.7" cy="226.0" r="3.8" class="point"/><circle cx="258.9" cy="224.9" r="3.8" class="point"/></g>
+  <circle cx="260" cy="226" r="3.5" class="center"/>
 </svg>

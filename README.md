@@ -53,10 +53,10 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 <table>
 <tr>
 <td width="50%" align="center" valign="middle">
-  <img src="assets/radar-skills.svg" width="390" alt="skill radar chart">
+  <img src="assets/radar-skills.svg" width="500" alt="skill radar chart">
 </td>
 <td width="50%" align="center" valign="middle">
-  <img src="assets/radar-langs.svg" width="390" alt="language radar chart">
+  <img src="assets/radar-langs.svg" width="500" alt="language radar chart">
 </td>
 </tr>
 </table>
