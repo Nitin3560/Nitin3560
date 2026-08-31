@@ -1,26 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="224" viewBox="0 0 680 224" role="img" aria-label="GitHub statistics for Nitin3560">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="230" viewBox="0 0 760 230" role="img" aria-label="GitHub statistics for Nitin3560">
   <style>
     .panel { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.4; }
-    .name { fill: #39d353; font: 800 21px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .name { fill: #39d353; font: 800 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .tag { fill: #57606a; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .num { fill: #24292f; font: 800 33px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .label { fill: #57606a; font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .num { fill: #24292f; font: 800 32px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .label { fill: #57606a; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .rule { stroke: #d8dee4; stroke-width: 1; }
+    .pill { fill: #10281b; stroke: #238636; stroke-width: 1; }
+    .pill-text { fill: #39d353; font: 800 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   </style>
-  <rect x="1" y="1" width="678" height="222" rx="8" class="panel"/>
+  <rect x="1" y="1" width="758" height="228" rx="8" class="panel"/>
   <text x="32" y="46" class="name">Nitin3560</text>
-  <text x="548" y="46" text-anchor="end" class="tag">at a glance</text>
-  <line x1="32" y1="68" x2="648" y2="68" class="rule"/>
-  <text x="32" y="112" class="num">4</text>
-  <text x="32" y="136" class="label">Selected repos</text>
-  <text x="236" y="112" class="num">1,983</text>
-  <text x="236" y="136" class="label">Contributions (1y)</text>
-  <text x="478" y="112" class="num">2026</text>
-  <text x="478" y="136" class="label">MS graduation</text>
-  <text x="32" y="180" class="num">0</text>
-  <text x="32" y="204" class="label">Current streak</text>
-  <text x="236" y="180" class="num">91</text>
-  <text x="236" y="204" class="label">Longest streak</text>
-  <text x="478" y="180" class="num">IEEE</text>
-  <text x="478" y="204" class="label">CSCN accepted</text>
+  <text x="680" y="46" text-anchor="end" class="tag">at a glance</text>
+  <line x1="32" y1="68" x2="728" y2="68" class="rule"/>
+  <text x="42" y="116" class="num">4</text>
+  <text x="42" y="139" class="label">Selected projects</text>
+  <text x="208" y="116" class="num">1,983</text>
+  <text x="208" y="139" class="label">Contributions (1y)</text>
+  <text x="438" y="116" class="num">91</text>
+  <text x="438" y="139" class="label">Longest streak</text>
+  <text x="608" y="116" class="num">0</text>
+  <text x="608" y="139" class="label">Current streak</text>
+  <rect x="42" y="172" width="170" height="31" rx="15" class="pill"/>
+  <text x="127" y="192" text-anchor="middle" class="pill-text">MS CS @ UTA</text>
+  <rect x="232" y="172" width="170" height="31" rx="15" class="pill"/>
+  <text x="317" y="192" text-anchor="middle" class="pill-text">IEEE CSCN 2026</text>
+  <rect x="422" y="172" width="220" height="31" rx="15" class="pill"/>
+  <text x="532" y="192" text-anchor="middle" class="pill-text">Autonomy + Backend</text>
 </svg>

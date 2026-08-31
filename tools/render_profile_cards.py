@@ -13,27 +13,27 @@ ASSETS = ROOT / "assets"
 PROJECTS = [
     (
         "CareerOS",
-        "Job discovery, matching, ingestion, retrieval",
-        "FastAPI / PostgreSQL / Redis / Python",
-        "3,000+ normalized postings, cached matching, async workers",
+        "Job matching and retrieval platform",
+        "FastAPI / Postgres / Redis / Python",
+        "Async ingestion, normalized jobs, cached matching",
     ),
     (
         "TwinGuard",
         "Autonomy assurance for UAV swarms",
         "C++17 / ROS 2 / PX4 / Gazebo",
-        "Trust-gated control, planning, supervision, CI validation",
+        "Trust-gated control, planning, supervision",
     ),
     (
         "UAV Autonomy Research Suite",
-        "Fault-aware supervisory control and multi-agent RL",
+        "Fault-aware control and multi-agent RL",
         "Python / RLlib / Docker / ROS 2",
-        "30-seed fault injection across wind, sensors, and comms",
+        "30-seed fault injection and evaluation",
     ),
     (
-        "Traceback AI",
-        "Root-cause analysis for distributed microservices",
-        "FastAPI / Graphs / Anomaly Detection",
-        "Telemetry ranking surfaced causes in top-3 for 87% of cases",
+        "YoMeets",
+        "Real-time AI meeting assistant",
+        "TypeScript / Postgres / pgvector",
+        "Live actions, decisions, memory, follow-ups",
     ),
 ]
 
@@ -74,9 +74,9 @@ def project_card(name: str, focus: str, stack: str, detail: str) -> str:
   <style>
     .panel {{ fill: url(#bg); stroke: #30363d; stroke-width: 1.2; }}
     .title {{ fill: #39d353; font: 700 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .focus {{ fill: #e6edf3; font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .detail {{ fill: #8b949e; font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .stack {{ fill: #58a6ff; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .focus {{ fill: #e6edf3; font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .detail {{ fill: #8b949e; font: 600 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .stack {{ fill: #39d353; font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
     .dot {{ fill: #39d353; }}
   </style>
   <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="8" class="panel"/>

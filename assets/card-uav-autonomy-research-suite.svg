@@ -9,15 +9,15 @@
   <style>
     .panel { fill: url(#bg); stroke: #30363d; stroke-width: 1.2; }
     .title { fill: #39d353; font: 700 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .focus { fill: #e6edf3; font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .detail { fill: #8b949e; font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .stack { fill: #58a6ff; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .focus { fill: #e6edf3; font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .detail { fill: #8b949e; font: 600 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .stack { fill: #39d353; font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .dot { fill: #39d353; }
   </style>
   <rect x="1" y="1" width="418" height="176" rx="8" class="panel"/>
   <circle cx="28" cy="30" r="5" class="dot"/>
   <text x="44" y="37" class="title">UAV Autonomy Research Suite</text>
-  <text x="28" y="75" class="focus">Fault-aware supervisory control and multi-agent RL</text>
-  <text x="28" y="105" class="detail">30-seed fault injection across wind, sensors, and comms</text>
+  <text x="28" y="75" class="focus">Fault-aware control and multi-agent RL</text>
+  <text x="28" y="105" class="detail">30-seed fault injection and evaluation</text>
   <text x="28" y="144" class="stack">Python / RLlib / Docker / ROS 2</text>
 </svg>

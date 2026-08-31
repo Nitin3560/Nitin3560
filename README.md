@@ -93,10 +93,6 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 
 <img src="assets/metrics.languages.svg" width="520" alt="most used languages">
 
-<br><br>
-
-<img src="assets/metrics.achievements.svg" width="90%" alt="GitHub achievements">
-
 </div>
 
 ---
@@ -125,8 +121,8 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
   </a>
 </td>
 <td width="50%">
-  <a href="https://github.com/Nitin3560/traceback-ai">
-    <img src="assets/card-traceback-ai.svg" width="420" alt="Traceback AI">
+  <a href="https://github.com/Nitin3560/YoMeets">
+    <img src="assets/card-yomeets.svg" width="420" alt="YoMeets">
   </a>
 </td>
 </tr>
@@ -139,7 +135,7 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 | **[CareerOS](https://github.com/Nitin3560/CareerOS)** | job discovery, matching, ingestion, retrieval | `FastAPI` `PostgreSQL` `Redis` `Python` |
 | **[TwinGuard](https://github.com/Nitin3560/TwinGuard)** | modular autonomy and fault tolerance for UAVs | `C++17` `ROS 2` `PX4` `Gazebo` |
 | **[UAV Autonomy Research Suite](https://github.com/Nitin3560/uav-autonomy-research-suite)** | fault-aware supervisory control and multi-agent RL | `Python` `RLlib` `Docker` `ROS 2` |
-| **[Traceback AI](https://github.com/Nitin3560/traceback-ai)** | root-cause analysis for distributed microservices | `FastAPI` `Graphs` `Anomaly Detection` |
+| **[YoMeets](https://github.com/Nitin3560/YoMeets)** | real-time meeting intelligence, memory, and approved follow-ups | `TypeScript` `PostgreSQL` `pgvector` |
 
 </sub>
 

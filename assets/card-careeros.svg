@@ -9,15 +9,15 @@
   <style>
     .panel { fill: url(#bg); stroke: #30363d; stroke-width: 1.2; }
     .title { fill: #39d353; font: 700 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .focus { fill: #e6edf3; font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .detail { fill: #8b949e; font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-    .stack { fill: #58a6ff; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .focus { fill: #e6edf3; font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .detail { fill: #8b949e; font: 600 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .stack { fill: #39d353; font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .dot { fill: #39d353; }
   </style>
   <rect x="1" y="1" width="418" height="176" rx="8" class="panel"/>
   <circle cx="28" cy="30" r="5" class="dot"/>
   <text x="44" y="37" class="title">CareerOS</text>
-  <text x="28" y="75" class="focus">Job discovery, matching, ingestion, retrieval</text>
-  <text x="28" y="105" class="detail">3,000+ normalized postings, cached matching, async workers</text>
-  <text x="28" y="144" class="stack">FastAPI / PostgreSQL / Redis / Python</text>
+  <text x="28" y="75" class="focus">Job matching and retrieval platform</text>
+  <text x="28" y="105" class="detail">Async ingestion, normalized jobs, cached matching</text>
+  <text x="28" y="144" class="stack">FastAPI / Postgres / Redis / Python</text>
 </svg>

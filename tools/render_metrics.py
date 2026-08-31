@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import html
 import json
-from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -43,48 +42,55 @@ def render_stats(payload: dict[str, object], suffix: str, *, dark: bool) -> None
     muted = "#8b949e" if dark else "#57606a"
     line = "#30363d" if dark else "#d8dee4"
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="680" height="224" viewBox="0 0 680 224" role="img" aria-label="GitHub statistics for Nitin3560">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="230" viewBox="0 0 760 230" role="img" aria-label="GitHub statistics for Nitin3560">
   <style>
     .panel {{ fill: {bg}; stroke: {border}; stroke-width: 1.4; }}
-    .name {{ fill: #39d353; font: 800 21px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .name {{ fill: #39d353; font: 800 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
     .tag {{ fill: {muted}; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .num {{ fill: {text}; font: 800 33px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .label {{ fill: {muted}; font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .num {{ fill: {text}; font: 800 32px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .label {{ fill: {muted}; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
     .rule {{ stroke: {line}; stroke-width: 1; }}
+    .pill {{ fill: #10281b; stroke: #238636; stroke-width: 1; }}
+    .pill-text {{ fill: #39d353; font: 800 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
   </style>
-  <rect x="1" y="1" width="678" height="222" rx="8" class="panel"/>
+  <rect x="1" y="1" width="758" height="228" rx="8" class="panel"/>
   <text x="32" y="46" class="name">Nitin3560</text>
-  <text x="548" y="46" text-anchor="end" class="tag">at a glance</text>
-  <line x1="32" y1="68" x2="648" y2="68" class="rule"/>
-  <text x="32" y="112" class="num">4</text>
-  <text x="32" y="136" class="label">Selected repos</text>
-  <text x="236" y="112" class="num">{total:,}</text>
-  <text x="236" y="136" class="label">Contributions (1y)</text>
-  <text x="478" y="112" class="num">2026</text>
-  <text x="478" y="136" class="label">MS graduation</text>
-  <text x="32" y="180" class="num">{current}</text>
-  <text x="32" y="204" class="label">Current streak</text>
-  <text x="236" y="180" class="num">{longest}</text>
-  <text x="236" y="204" class="label">Longest streak</text>
-  <text x="478" y="180" class="num">IEEE</text>
-  <text x="478" y="204" class="label">CSCN accepted</text>
+  <text x="680" y="46" text-anchor="end" class="tag">at a glance</text>
+  <line x1="32" y1="68" x2="728" y2="68" class="rule"/>
+  <text x="42" y="116" class="num">4</text>
+  <text x="42" y="139" class="label">Selected projects</text>
+  <text x="208" y="116" class="num">{total:,}</text>
+  <text x="208" y="139" class="label">Contributions (1y)</text>
+  <text x="438" y="116" class="num">{longest}</text>
+  <text x="438" y="139" class="label">Longest streak</text>
+  <text x="608" y="116" class="num">{current}</text>
+  <text x="608" y="139" class="label">Current streak</text>
+  <rect x="42" y="172" width="170" height="31" rx="15" class="pill"/>
+  <text x="127" y="192" text-anchor="middle" class="pill-text">MS CS @ UTA</text>
+  <rect x="232" y="172" width="170" height="31" rx="15" class="pill"/>
+  <text x="317" y="192" text-anchor="middle" class="pill-text">IEEE CSCN 2026</text>
+  <rect x="422" y="172" width="220" height="31" rx="15" class="pill"/>
+  <text x="532" y="192" text-anchor="middle" class="pill-text">Autonomy + Backend</text>
 </svg>
 '''
     write(ASSETS / f"card-stats-{suffix}.svg", svg)
 
 
 def render_languages() -> None:
-    width, height = 680, 190
+    width, height = 760, 142
     x = 32
     bars = []
     labels = []
-    for name, pct, color in LANGUAGES:
-        bar_width = int(616 * pct / 100)
-        bars.append(f'<rect x="{x}" y="65" width="{bar_width}" height="17" fill="{color}"/>')
-        label_y = 116 + len(labels) * 24
+    for index, (name, pct, color) in enumerate(LANGUAGES):
+        bar_width = int(696 * pct / 100)
+        bars.append(f'<rect x="{x}" y="54" width="{bar_width}" height="16" fill="{color}"/>')
+        col = index % 3
+        row = index // 3
+        label_x = 40 + col * 230
+        label_y = 102 + row * 24
         labels.append(
-            f'<circle cx="{x + 6}" cy="{label_y}" r="5" fill="{color}"/>'
-            f'<text x="{x + 18}" y="{label_y + 5}" class="label">{html.escape(name)} {pct}%</text>'
+            f'<circle cx="{label_x}" cy="{label_y}" r="5" fill="{color}"/>'
+            f'<text x="{label_x + 16}" y="{label_y + 5}" class="label">{html.escape(name)} {pct}%</text>'
         )
         x += bar_width
 
@@ -94,48 +100,13 @@ def render_languages() -> None:
     .label {{ fill: #c9d1d9; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
     .bar-bg {{ fill: #161b22; }}
   </style>
-  <text x="32" y="34" class="title">8 languages</text>
-  <rect x="32" y="65" width="616" height="17" rx="4" class="bar-bg"/>
+  <text x="32" y="31" class="title">core languages</text>
+  <rect x="32" y="54" width="696" height="16" rx="4" class="bar-bg"/>
   <g>{''.join(bars)}</g>
   <g>{''.join(labels)}</g>
 </svg>
 '''
     write(ASSETS / "metrics.languages.svg", svg)
-
-
-def render_achievements(payload: dict[str, object]) -> None:
-    total = int(payload["total"])
-    longest = int(payload["longest_streak"])
-    top_day = payload.get("top_day", {})
-    top_count = int(top_day.get("count", 0)) if isinstance(top_day, dict) else 0
-    items = [
-        ("Commit Engine", f"{total:,} contributions in one year"),
-        ("Long Runner", f"{longest}-day longest streak"),
-        ("Peak Day", f"{top_count} contributions on the top day"),
-    ]
-    cards = []
-    for index, (title, detail) in enumerate(items):
-        x = 28 + index * 210
-        cards.append(
-            f'''<g>
-  <rect x="{x}" y="44" width="190" height="118" rx="8" class="card"/>
-  <text x="{x + 18}" y="82" class="badge">◆</text>
-  <text x="{x + 44}" y="82" class="title">{html.escape(title)}</text>
-  <text x="{x + 18}" y="124" class="detail">{html.escape(detail)}</text>
-</g>'''
-        )
-
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="680" height="190" viewBox="0 0 680 190" role="img" aria-label="GitHub achievements">
-  <style>
-    .card {{ fill: #0d1117; stroke: #30363d; stroke-width: 1.2; }}
-    .badge {{ fill: #39d353; font: 800 18px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .title {{ fill: #e6edf3; font: 800 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .detail {{ fill: #8b949e; font: 700 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-  </style>
-  <g>{''.join(cards)}</g>
-</svg>
-'''
-    write(ASSETS / "metrics.achievements.svg", svg)
 
 
 def iso_point(col: int, row: int, cell: float = 9.5) -> tuple[float, float]:
@@ -162,7 +133,6 @@ def render_isocalendar(payload: dict[str, object]) -> None:
     top_count = int(top_day.get("count", 0)) if isinstance(top_day, dict) else 0
 
     cells = []
-    flat = []
     for day in days:
         dt = date.fromisoformat(day["date"])
         week = (dt - start).days // 7
@@ -177,16 +147,9 @@ def render_isocalendar(payload: dict[str, object]) -> None:
             top = f"{x:.1f},{y:.1f} {x + 8:.1f},{y + 4.5:.1f} {x:.1f},{y + 9:.1f} {x - 8:.1f},{y + 4.5:.1f}"
             cells.append(f'<polygon points="{top}" fill="#d1d5db" opacity="0.92"/>')
 
-        fx = 58 + week * 12
-        fy = 472 + weekday * 12
-        flat.append(f'<rect x="{fx}" y="{fy}" width="9" height="9" rx="2" fill="{color}"/>')
-
-    weekday_counts = Counter()
-    for day in days:
-        weekday_counts[str(day["weekday"])] += int(day["count"])
     average = total / max(1, len(days))
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="930" height="590" viewBox="0 0 930 590" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="930" height="430" viewBox="0 0 930 430" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
   <style>
     .heading {{ fill: #39d353; font: 700 30px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
     .meta-title {{ fill: #39d353; font: 700 23px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
@@ -201,8 +164,6 @@ def render_isocalendar(payload: dict[str, object]) -> None:
   <text x="520" y="255" class="meta">Highest in a day at {top_count}</text>
   <text x="520" y="286" class="meta">Average per day at ~{average:.2f}</text>
   <g>{''.join(cells)}</g>
-  <g>{''.join(flat)}</g>
-  <rect x="58" y="558" width="550" height="14" class="track"/>
 </svg>
 '''
     write(ASSETS / "metrics.isocalendar.svg", svg)
@@ -214,7 +175,6 @@ def main() -> None:
     render_stats(payload, "dark", dark=True)
     render_stats(payload, "light", dark=False)
     render_languages()
-    render_achievements(payload)
 
 
 if __name__ == "__main__":

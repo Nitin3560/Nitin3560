@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="190" viewBox="0 0 680 190" role="img" aria-label="Most used languages">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="142" viewBox="0 0 760 142" role="img" aria-label="Most used languages">
   <style>
     .title { fill: #39d353; font: 800 20px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .label { fill: #c9d1d9; font: 700 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
     .bar-bg { fill: #161b22; }
   </style>
-  <text x="32" y="34" class="title">8 languages</text>
-  <rect x="32" y="65" width="616" height="17" rx="4" class="bar-bg"/>
-  <g><rect x="32" y="65" width="221" height="17" fill="#3572A5"/><rect x="253" y="65" width="147" height="17" fill="#f34b7d"/><rect x="400" y="65" width="98" height="17" fill="#b07219"/><rect x="498" y="65" width="67" height="17" fill="#3178c6"/><rect x="565" y="65" width="49" height="17" fill="#f1e05a"/><rect x="614" y="65" width="30" height="17" fill="#89e051"/></g>
-  <g><circle cx="38" cy="116" r="5" fill="#3572A5"/><text x="50" y="121" class="label">Python 36%</text><circle cx="259" cy="140" r="5" fill="#f34b7d"/><text x="271" y="145" class="label">C++ 24%</text><circle cx="406" cy="164" r="5" fill="#b07219"/><text x="418" y="169" class="label">Java 16%</text><circle cx="504" cy="188" r="5" fill="#3178c6"/><text x="516" y="193" class="label">TypeScript 11%</text><circle cx="571" cy="212" r="5" fill="#f1e05a"/><text x="583" y="217" class="label">JavaScript 8%</text><circle cx="620" cy="236" r="5" fill="#89e051"/><text x="632" y="241" class="label">Shell 5%</text></g>
+  <text x="32" y="31" class="title">core languages</text>
+  <rect x="32" y="54" width="696" height="16" rx="4" class="bar-bg"/>
+  <g><rect x="32" y="54" width="250" height="16" fill="#3572A5"/><rect x="282" y="54" width="167" height="16" fill="#f34b7d"/><rect x="449" y="54" width="111" height="16" fill="#b07219"/><rect x="560" y="54" width="76" height="16" fill="#3178c6"/><rect x="636" y="54" width="55" height="16" fill="#f1e05a"/><rect x="691" y="54" width="34" height="16" fill="#89e051"/></g>
+  <g><circle cx="40" cy="102" r="5" fill="#3572A5"/><text x="56" y="107" class="label">Python 36%</text><circle cx="270" cy="102" r="5" fill="#f34b7d"/><text x="286" y="107" class="label">C++ 24%</text><circle cx="500" cy="102" r="5" fill="#b07219"/><text x="516" y="107" class="label">Java 16%</text><circle cx="40" cy="126" r="5" fill="#3178c6"/><text x="56" y="131" class="label">TypeScript 11%</text><circle cx="270" cy="126" r="5" fill="#f1e05a"/><text x="286" y="131" class="label">JavaScript 8%</text><circle cx="500" cy="126" r="5" fill="#89e051"/><text x="516" y="131" class="label">Shell 5%</text></g>
 </svg>

@@ -23,4 +23,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "auto: refresh profile metrics [skip ci]"
-          file_pattern: "assets/contributions.json graph.svg assets/metrics.isocalendar.svg assets/card-stats-dark.svg assets/card-stats-light.svg assets/metrics.languages.svg assets/metrics.achievements.svg"
+          file_pattern: "assets/contributions.json graph.svg assets/metrics.isocalendar.svg assets/card-stats-dark.svg assets/card-stats-light.svg assets/metrics.languages.svg"
