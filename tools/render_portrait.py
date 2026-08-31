@@ -1,83 +1,97 @@
 #!/usr/bin/env python3
-"""Render a self-drawing ASCII identity portrait."""
+"""Render the README hero portrait from the GitHub profile photo."""
 
 from __future__ import annotations
 
-import html
+import colorsys
+import io
 import os
+import urllib.request
 from pathlib import Path
 
+from PIL import Image, ImageFilter, ImageOps
+
+USERNAME = "Nitin3560"
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "portrait.svg"
+AVATAR_URL = f"https://github.com/{USERNAME}.png?size=640"
 
-ART = [
-    "                  ..::--==++**##%%@@",
-    "             .:-=+*#%%%%%%%%%%%%%%%%%",
-    "          .:=*%%%%%#*+=--::..        ",
-    "        .=#%%%%*-.                  ",
-    "       :#%%%%+.     N I T I N       ",
-    "      -%%%%#:       S I N G H       ",
-    "     .%%%%%:        R A T H O R E   ",
-    "     +%%%%+                         ",
-    "     %%%%%.    software engineer    ",
-    "     %%%%%.    backend systems      ",
-    "     +%%%%+    APIs databases CI    ",
-    "     .%%%%%:                        ",
-    "      -%%%%#:        C++ PYTHON JAVA",
-    "       :#%%%%+.      FASTAPI REDIS  ",
-    "        .=#%%%%*-.                  ",
-    "          .:=*%%%%%#*+=--::..      ",
-    "             .:-=+*#%%%%%%%%%%%%%%%%",
-    "                  ..::--==++**##%%@@",
-]
+
+def fetch_avatar() -> Image.Image:
+    local_source = os.getenv("PORTRAIT_SOURCE")
+    if local_source:
+        return Image.open(local_source).convert("RGB")
+
+    request = urllib.request.Request(
+        AVATAR_URL,
+        headers={"User-Agent": f"{USERNAME}-profile-portrait-renderer"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        payload = response.read()
+    return Image.open(io.BytesIO(payload)).convert("RGB")
+
+
+def color_for(pixel: tuple[int, int, int]) -> str:
+    r, g, b = pixel
+    h, s, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
+    s = min(1.0, s * 1.18 + 0.06)
+    v = min(1.0, max(0.14, v * 0.95))
+    r2, g2, b2 = colorsys.hsv_to_rgb(h, s, v)
+    return f"#{int(r2 * 255):02x}{int(g2 * 255):02x}{int(b2 * 255):02x}"
 
 
 def main() -> None:
-    preview = os.getenv("PREVIEW") == "1"
-    width, height = 420, 420
-    x, y0, line_height = 24, 58, 18
-    text_nodes = []
-    clip_defs = []
+    source = ImageOps.fit(fetch_avatar(), (360, 360), method=Image.Resampling.LANCZOS)
+    source = source.filter(ImageFilter.SHARPEN)
 
-    for index, row in enumerate(ART):
-        y = y0 + index * line_height
-        clip_id = f"line-{index}"
-        delay = 0 if preview else index * 0.045
-        clip_width = width - 48
-        clip_defs.append(
-            f'''<clipPath id="{clip_id}">
-      <rect x="{x}" y="{y - 15}" width="{clip_width if preview else 0}" height="{line_height}">
-        <animate attributeName="width" from="0" to="{clip_width}" begin="{delay:.3f}s" dur="0.5s" fill="freeze"/>
-      </rect>
-    </clipPath>'''
-        )
-        text_nodes.append(
-            f'''<text x="{x}" y="{y}" clip-path="url(#{clip_id})">{html.escape(row)}</text>'''
-        )
+    width, height = 420, 390
+    dot_step = 6
+    dot_radius = 2.05
+    offset_x, offset_y = 30, 6
+    center_x, center_y = 210, 182
+    radius_x, radius_y = 178, 174
+    dots: list[str] = []
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Animated ASCII identity portrait for Nitin Singh Rathore">
+    for y in range(0, 360, dot_step):
+        for x in range(0, 360, dot_step):
+            px = offset_x + x
+            py = offset_y + y
+            nx = (px - center_x) / radius_x
+            ny = (py - center_y) / radius_y
+            dist = nx * nx + ny * ny
+            if dist > 1.0:
+                continue
+
+            fade = max(0.0, min(1.0, (1.0 - dist) * 2.2))
+            if fade < 0.24:
+                continue
+
+            color = color_for(source.getpixel((x, y)))
+            opacity = 0.46 + fade * 0.54
+            dots.append(
+                f'<circle cx="{px}" cy="{py}" r="{dot_radius:.2f}" fill="{color}" opacity="{opacity:.2f}"/>'
+            )
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Dot matrix profile portrait for Nitin Singh Rathore">
   <defs>
-    <radialGradient id="scan" cx="50%" cy="18%" r="80%">
-      <stop offset="0%" stop-color="#123f48"/>
-      <stop offset="54%" stop-color="#08111f"/>
-      <stop offset="100%" stop-color="#020617"/>
-    </radialGradient>
-    {''.join(clip_defs)}
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="portraitClip">
+      <ellipse cx="{center_x}" cy="{center_y}" rx="{radius_x}" ry="{radius_y}"/>
+    </clipPath>
   </defs>
-  <style>
-    .shell {{ fill: url(#scan); stroke: #38bdf8; stroke-width: 1.2; }}
-    .label {{ fill: #7dd3fc; font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    text {{ fill: #5eead4; font: 700 13.5px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 0; }}
-    .dim {{ fill: #64748b; }}
-  </style>
-  <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="8" class="shell"/>
-  <text x="24" y="30" class="label">$ ./draw_identity --ascii</text>
-  <g>{''.join(text_nodes)}</g>
-  <text x="24" y="392" class="dim">render: local svg | motion: smil | badges: none</text>
+  <g filter="url(#softGlow)">
+    {''.join(dots)}
+  </g>
 </svg>
 '''
     OUT.write_text(svg, encoding="utf-8")
-    print(f"Wrote {OUT.relative_to(ROOT)}")
+    print(f"Wrote {OUT.relative_to(ROOT)} with {len(dots)} dots")
 
 
 if __name__ == "__main__":

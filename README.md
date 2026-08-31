@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/Nitin3560.png" width="260" alt="Nitin Singh Rathore profile picture">
+<img src="portrait.svg" width="390" alt="Nitin Singh Rathore dot matrix profile portrait">
 
 <br>
 
