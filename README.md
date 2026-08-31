@@ -128,23 +128,15 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 </tr>
 </table>
 
+<br>
+
 <sub>
-
-| project | focus | stack |
-|---|---|---|
-| **[CareerOS](https://github.com/Nitin3560/CareerOS)** | job discovery, matching, ingestion, retrieval | `FastAPI` `PostgreSQL` `Redis` `Python` |
-| **[TwinGuard](https://github.com/Nitin3560/TwinGuard)** | modular autonomy and fault tolerance for UAVs | `C++17` `ROS 2` `PX4` `Gazebo` |
-| **[UAV Autonomy Research Suite](https://github.com/Nitin3560/uav-autonomy-research-suite)** | fault-aware supervisory control and multi-agent RL | `Python` `RLlib` `Docker` `ROS 2` |
-| **[YoMeets](https://github.com/Nitin3560/YoMeets)** | real-time meeting intelligence, memory, and approved follow-ups | `TypeScript` `PostgreSQL` `pgvector` |
-
+currently building systems around autonomy, backend reliability, meeting intelligence, and developer workflows
 </sub>
 
-</div>
+<br><br>
 
----
-
-<div align="center">
-
-<sub>`01110100 01101000 01100001 01101110 01101011 01110011 00100000 01100110 01101111 01110010 00100000 01110011 01100011 01110010 01101111 01101100 01101100 01101001 01101110 01100111`</sub>
+<a href="https://nitinsinghrathore.us"><img src="https://img.shields.io/badge/portfolio-111111?style=flat-square&logo=vercel&logoColor=white" alt="portfolio"></a>
+<a href="https://linkedin.com/in/nitin-singh-rathore"><img src="https://img.shields.io/badge/connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="connect"></a>
 
 </div>
