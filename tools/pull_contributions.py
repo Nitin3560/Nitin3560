@@ -35,11 +35,14 @@ def streaks(days: list[dict[str, object]]) -> tuple[int, int]:
             current = 0
 
     current = 0
-    for day in reversed(ordered):
-        if int(day["count"]) > 0:
-            current += 1
-        else:
+    latest_active = len(ordered) - 1
+    while latest_active >= 0 and int(ordered[latest_active]["count"]) == 0:
+        latest_active -= 1
+
+    for day in reversed(ordered[: latest_active + 1]):
+        if int(day["count"]) == 0:
             break
+        current += 1
     return current, longest
 
 
