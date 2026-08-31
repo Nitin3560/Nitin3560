@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="portrait.svg" width="300" alt="Nitin Singh Rathore, rendered as a terminal-style portrait">
+<img src="https://github.com/Nitin3560.png" width="260" alt="Nitin Singh Rathore profile picture">
 
 <br>
 
