@@ -138,14 +138,17 @@ def render_achievements(payload: dict[str, object]) -> None:
     write(ASSETS / "metrics.achievements.svg", svg)
 
 
-def iso_point(col: int, row: int, cell: int = 14) -> tuple[float, float]:
-    return 106 + (col - row) * cell * 0.82, 260 + (col + row) * cell * 0.42
+def iso_point(col: int, row: int, cell: float = 9.5) -> tuple[float, float]:
+    return 120 + (col - row) * cell * 0.82, 170 + (col + row) * cell * 0.42
 
 
-def cube(x: float, y: float, h: int, color: str) -> str:
-    top = f"{x:.1f},{y - h:.1f} {x + 13:.1f},{y - h + 7:.1f} {x:.1f},{y - h + 14:.1f} {x - 13:.1f},{y - h + 7:.1f}"
-    left = f"{x - 13:.1f},{y - h + 7:.1f} {x:.1f},{y - h + 14:.1f} {x:.1f},{y + 14:.1f} {x - 13:.1f},{y + 7:.1f}"
-    right = f"{x:.1f},{y - h + 14:.1f} {x + 13:.1f},{y - h + 7:.1f} {x + 13:.1f},{y + 7:.1f} {x:.1f},{y + 14:.1f}"
+def cube(x: float, y: float, h: float, color: str) -> str:
+    half_w = 8
+    half_h = 4.5
+    full_h = 9
+    top = f"{x:.1f},{y - h:.1f} {x + half_w:.1f},{y - h + half_h:.1f} {x:.1f},{y - h + full_h:.1f} {x - half_w:.1f},{y - h + half_h:.1f}"
+    left = f"{x - half_w:.1f},{y - h + half_h:.1f} {x:.1f},{y - h + full_h:.1f} {x:.1f},{y + full_h:.1f} {x - half_w:.1f},{y + half_h:.1f}"
+    right = f"{x:.1f},{y - h + full_h:.1f} {x + half_w:.1f},{y - h + half_h:.1f} {x + half_w:.1f},{y + half_h:.1f} {x:.1f},{y + full_h:.1f}"
     return f'<polygon points="{left}" fill="#0f5132"/><polygon points="{right}" fill="#238636"/><polygon points="{top}" fill="{color}"/>'
 
 
@@ -169,37 +172,37 @@ def render_isocalendar(payload: dict[str, object]) -> None:
         color = GREEN[level]
         x, y = iso_point(week, weekday)
         if count:
-            cells.append(cube(x, y, min(52, 6 + count), color))
+            cells.append(cube(x, y, min(36, 4 + count * 0.55), color))
         else:
-            top = f"{x:.1f},{y:.1f} {x + 13:.1f},{y + 7:.1f} {x:.1f},{y + 14:.1f} {x - 13:.1f},{y + 7:.1f}"
-            cells.append(f'<polygon points="{top}" fill="#e5e7eb" opacity="0.95"/>')
+            top = f"{x:.1f},{y:.1f} {x + 8:.1f},{y + 4.5:.1f} {x:.1f},{y + 9:.1f} {x - 8:.1f},{y + 4.5:.1f}"
+            cells.append(f'<polygon points="{top}" fill="#d1d5db" opacity="0.92"/>')
 
-        fx = 40 + week * 13
-        fy = 510 + weekday * 13
-        flat.append(f'<rect x="{fx}" y="{fy}" width="10" height="10" rx="2" fill="{color}"/>')
+        fx = 58 + week * 12
+        fy = 472 + weekday * 12
+        flat.append(f'<rect x="{fx}" y="{fy}" width="9" height="9" rx="2" fill="{color}"/>')
 
     weekday_counts = Counter()
     for day in days:
         weekday_counts[str(day["weekday"])] += int(day["count"])
     average = total / max(1, len(days))
 
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="930" height="650" viewBox="0 0 930 650" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="930" height="590" viewBox="0 0 930 590" role="img" aria-label="3D isometric contribution calendar for Nitin3560">
   <style>
-    .heading {{ fill: #0969da; font: 500 31px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }}
-    .meta-title {{ fill: #0969da; font: 500 24px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }}
-    .meta {{ fill: #8b949e; font: 500 23px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }}
+    .heading {{ fill: #39d353; font: 700 30px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .meta-title {{ fill: #39d353; font: 700 23px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
+    .meta {{ fill: #8b949e; font: 600 20px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
     .track {{ fill: #014421; }}
   </style>
-  <text x="90" y="62" class="heading">Contributions calendar</text>
+  <text x="58" y="58" class="heading">$ contributions.calendar</text>
   <text x="520" y="104" class="meta-title">Commits streaks</text>
-  <text x="520" y="139" class="meta">Current streak {current} days</text>
-  <text x="520" y="174" class="meta">Best streak {longest} days</text>
+  <text x="520" y="137" class="meta">Current streak {current} days</text>
+  <text x="520" y="168" class="meta">Best streak {longest} days</text>
   <text x="520" y="222" class="meta-title">Commits per day</text>
-  <text x="520" y="257" class="meta">Highest in a day at {top_count}</text>
-  <text x="520" y="292" class="meta">Average per day at ~{average:.2f}</text>
+  <text x="520" y="255" class="meta">Highest in a day at {top_count}</text>
+  <text x="520" y="286" class="meta">Average per day at ~{average:.2f}</text>
   <g>{''.join(cells)}</g>
   <g>{''.join(flat)}</g>
-  <rect x="40" y="610" width="560" height="16" class="track"/>
+  <rect x="58" y="558" width="550" height="14" class="track"/>
 </svg>
 '''
     write(ASSETS / "metrics.isocalendar.svg", svg)
