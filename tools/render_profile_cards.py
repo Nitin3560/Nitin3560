@@ -13,27 +13,47 @@ ASSETS = ROOT / "assets"
 PROJECTS = [
     (
         "CareerOS",
-        "Job matching and retrieval platform",
-        "FastAPI / Postgres / Redis / Python",
-        "Async ingestion, normalized jobs, cached matching",
+        [
+            "Full-stack job discovery and matching platform",
+            "with scalable ingestion and optimized retrieval.",
+        ],
+        "Python",
+        "#3572A5",
+        "0",
+        "0",
     ),
     (
         "TwinGuard",
-        "Autonomy assurance for UAV swarms",
-        "C++17 / ROS 2 / PX4 / Gazebo",
-        "Trust-gated control, planning, supervision",
+        [
+            "Autonomy assurance for UAV swarms: trust-gated",
+            "control, behavior-tree supervision, and Nav2.",
+        ],
+        "C++",
+        "#f34b7d",
+        "1",
+        "0",
     ),
     (
         "UAV Autonomy Research Suite",
-        "Fault-aware control and multi-agent RL",
-        "Python / RLlib / Docker / ROS 2",
-        "30-seed fault injection and evaluation",
+        [
+            "Fault-tolerant supervisory control for autonomous",
+            "UAV swarms with CTDE-MAPPO and fault injection.",
+        ],
+        "Python",
+        "#3572A5",
+        "1",
+        "0",
     ),
     (
         "YoMeets",
-        "Real-time AI meeting assistant",
-        "TypeScript / Postgres / pgvector",
-        "Live actions, decisions, memory, follow-ups",
+        [
+            "Real-time AI meeting assistant that tracks actions,",
+            "decisions, memory, and approved follow-ups.",
+        ],
+        "TypeScript",
+        "#3178c6",
+        "0",
+        "0",
     ),
 ]
 
@@ -65,30 +85,38 @@ def write(path: Path, text: str) -> None:
     print(f"Wrote {path.relative_to(ROOT)}")
 
 
-def project_card(name: str, focus: str, stack: str, detail: str) -> str:
-    width, height = 420, 178
+def project_card(name: str, description: list[str], language: str, color: str, stars: str, forks: str) -> str:
+    width, height = 520, 162
+    desc_nodes = "\n".join(
+        f'  <text x="40" y="{72 + index * 22}" class="desc">{html.escape(line)}</text>'
+        for index, line in enumerate(description)
+    )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{html.escape(name)} project card">
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="58%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#0f1f1d"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
   </defs>
   <style>
     .panel {{ fill: url(#bg); stroke: #30363d; stroke-width: 1.2; }}
-    .title {{ fill: #39d353; font: 700 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .focus {{ fill: #e6edf3; font: 700 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .detail {{ fill: #8b949e; font: 600 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .stack {{ fill: #39d353; font: 700 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }}
-    .dot {{ fill: #39d353; }}
+    .repo {{ fill: #8b949e; }}
+    .title {{ fill: #39d353; font: 800 18px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }}
+    .desc {{ fill: #e6edf3; font: 600 14px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }}
+    .meta {{ fill: #8b949e; font: 600 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }}
+    .lang-dot {{ fill: {color}; }}
+    .muted {{ fill: #8b949e; }}
   </style>
   <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="8" class="panel"/>
-  <circle cx="28" cy="30" r="5" class="dot"/>
-  <text x="44" y="37" class="title">{html.escape(name)}</text>
-  <text x="28" y="75" class="focus">{html.escape(focus)}</text>
-  <text x="28" y="105" class="detail">{html.escape(detail)}</text>
-  <text x="28" y="144" class="stack">{html.escape(stack)}</text>
+  <path class="repo" d="M40 28h12a4 4 0 0 1 4 4v16l-6-3-6 3-6-3-6 3V32a4 4 0 0 1 4-4z"/>
+  <text x="66" y="44" class="title">{html.escape(name)}</text>
+{desc_nodes}
+  <circle cx="40" cy="128" r="6" class="lang-dot"/>
+  <text x="58" y="133" class="meta">{html.escape(language)}</text>
+  <path class="muted" d="M206 121l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/>
+  <text x="230" y="133" class="meta">{html.escape(stars)}</text>
+  <path class="muted" d="M286 121a4 4 0 1 0-4 4v8a8 8 0 0 0 8 8h6a4 4 0 1 0 0-4h-6a4 4 0 0 1-4-4v-8a4 4 0 0 0 0-4zm18 16a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/>
+  <text x="316" y="133" class="meta">{html.escape(forks)}</text>
 </svg>
 '''
 

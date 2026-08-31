@@ -105,24 +105,24 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 <tr>
 <td width="50%">
   <a href="https://github.com/Nitin3560/CareerOS">
-    <img src="assets/card-careeros.svg" width="420" alt="CareerOS">
+    <img src="assets/card-careeros.svg" width="520" alt="CareerOS">
   </a>
 </td>
 <td width="50%">
   <a href="https://github.com/Nitin3560/TwinGuard">
-    <img src="assets/card-twinguard.svg" width="420" alt="TwinGuard">
+    <img src="assets/card-twinguard.svg" width="520" alt="TwinGuard">
   </a>
 </td>
 </tr>
 <tr>
 <td width="50%">
   <a href="https://github.com/Nitin3560/uav-autonomy-research-suite">
-    <img src="assets/card-uav-autonomy-research-suite.svg" width="420" alt="UAV Autonomy Research Suite">
+    <img src="assets/card-uav-autonomy-research-suite.svg" width="520" alt="UAV Autonomy Research Suite">
   </a>
 </td>
 <td width="50%">
   <a href="https://github.com/Nitin3560/YoMeets">
-    <img src="assets/card-yomeets.svg" width="420" alt="YoMeets">
+    <img src="assets/card-yomeets.svg" width="520" alt="YoMeets">
   </a>
 </td>
 </tr>
@@ -130,13 +130,32 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 
 <br>
 
-<sub>
-currently building systems around autonomy, backend reliability, meeting intelligence, and developer workflows
-</sub>
-
-<br><br>
-
-<a href="https://nitinsinghrathore.us"><img src="https://img.shields.io/badge/portfolio-111111?style=flat-square&logo=vercel&logoColor=white" alt="portfolio"></a>
-<a href="https://linkedin.com/in/nitin-singh-rathore"><img src="https://img.shields.io/badge/connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="connect"></a>
+<table>
+<tr>
+<th>project</th>
+<th>repo</th>
+<th>stack</th>
+</tr>
+<tr>
+<td><a href="https://github.com/Nitin3560/CareerOS">CareerOS</a></td>
+<td><a href="https://github.com/Nitin3560/CareerOS">source</a></td>
+<td><code>FastAPI</code> <code>Postgres</code> <code>Redis</code> <code>Python</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Nitin3560/TwinGuard">TwinGuard</a></td>
+<td><a href="https://github.com/Nitin3560/TwinGuard">source</a></td>
+<td><code>C++17</code> <code>ROS 2</code> <code>PX4</code> <code>Gazebo</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Nitin3560/uav-autonomy-research-suite">UAV Autonomy Research Suite</a></td>
+<td><a href="https://github.com/Nitin3560/uav-autonomy-research-suite">source</a></td>
+<td><code>Python</code> <code>RLlib</code> <code>Docker</code> <code>ROS 2</code></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Nitin3560/YoMeets">YoMeets</a></td>
+<td><a href="https://github.com/Nitin3560/YoMeets">source</a></td>
+<td><code>TypeScript</code> <code>Postgres</code> <code>pgvector</code></td>
+</tr>
+</table>
 
 </div>
