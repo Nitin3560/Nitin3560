@@ -1,8 +1,8 @@
 {
   "username": "Nitin3560",
-  "fetched_at": "2026-09-05T08:46:02Z",
-  "total": 2052,
-  "current_streak": 24,
+  "fetched_at": "2026-09-06T09:06:57Z",
+  "total": 2053,
+  "current_streak": 25,
   "longest_streak": 91,
   "busiest_weekday": "Friday",
   "top_day": {
@@ -12,12 +12,6 @@
     "weekday": "Thursday"
   },
   "days": [
-    {
-      "date": "2025-08-31",
-      "count": 0,
-      "level": 0,
-      "weekday": "Sunday"
-    },
     {
       "date": "2025-09-07",
       "count": 5,
@@ -331,10 +325,10 @@
       "weekday": "Sunday"
     },
     {
-      "date": "2025-09-01",
-      "count": 4,
-      "level": 1,
-      "weekday": "Monday"
+      "date": "2026-09-06",
+      "count": 0,
+      "level": 0,
+      "weekday": "Sunday"
     },
     {
       "date": "2025-09-08",
@@ -649,12 +643,6 @@
       "weekday": "Monday"
     },
     {
-      "date": "2025-09-02",
-      "count": 14,
-      "level": 2,
-      "weekday": "Tuesday"
-    },
-    {
       "date": "2025-09-09",
       "count": 13,
       "level": 2,
@@ -965,12 +953,6 @@
       "count": 3,
       "level": 1,
       "weekday": "Tuesday"
-    },
-    {
-      "date": "2025-09-03",
-      "count": 9,
-      "level": 1,
-      "weekday": "Wednesday"
     },
     {
       "date": "2025-09-10",
@@ -1285,12 +1267,6 @@
       "weekday": "Wednesday"
     },
     {
-      "date": "2025-09-04",
-      "count": 8,
-      "level": 1,
-      "weekday": "Thursday"
-    },
-    {
       "date": "2025-09-11",
       "count": 0,
       "level": 0,
@@ -1601,12 +1577,6 @@
       "count": 40,
       "level": 4,
       "weekday": "Thursday"
-    },
-    {
-      "date": "2025-09-05",
-      "count": 13,
-      "level": 2,
-      "weekday": "Friday"
     },
     {
       "date": "2025-09-12",
@@ -1921,12 +1891,6 @@
       "weekday": "Friday"
     },
     {
-      "date": "2025-09-06",
-      "count": 8,
-      "level": 1,
-      "weekday": "Saturday"
-    },
-    {
       "date": "2025-09-13",
       "count": 7,
       "level": 1,
@@ -2234,8 +2198,8 @@
     },
     {
       "date": "2026-09-05",
-      "count": 0,
-      "level": 0,
+      "count": 1,
+      "level": 1,
       "weekday": "Saturday"
     }
   ]
