@@ -1,0 +1,11 @@
+# Python cache and build output
+__pycache__/
+*.py[cod]
+
+# Local virtual environments
+.venv/
+venv/
+
+# Local environment files
+.env
+.env.*
