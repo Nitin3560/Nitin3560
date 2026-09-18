@@ -97,6 +97,7 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 
 ---
 
+<!-- selected work hidden for now
 <div align="center">
 
 ## `~/` selected work
@@ -159,3 +160,4 @@ Hi, I'm **Nitin Singh Rathore**. I build backend systems, autonomy software, and
 </table>
 
 </div>
+-->
