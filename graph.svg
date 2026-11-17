@@ -70,13 +70,13 @@
     </rect><rect x="96" y="104" width="12" height="12" rx="3" fill="#101827" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.050s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.050s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="96" y="120" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="96" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.050s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.050s" dur="0.28s" fill="freeze"/>
     </rect><rect x="96" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.050s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.050s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="96" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="96" y="152" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.050s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.050s" dur="0.28s" fill="freeze"/>
     </rect><rect x="112" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -85,7 +85,7 @@
     </rect><rect x="112" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.075s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.075s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="112" y="88" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="112" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.075s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.075s" dur="0.28s" fill="freeze"/>
     </rect><rect x="112" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -100,10 +100,10 @@
     </rect><rect x="112" y="152" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.075s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.075s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="128" y="56" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="128" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.100s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.100s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="128" y="72" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="128" y="72" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.100s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.100s" dur="0.28s" fill="freeze"/>
     </rect><rect x="128" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
@@ -118,19 +118,19 @@
     </rect><rect x="128" y="136" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.100s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.100s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="128" y="152" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="128" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.100s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.100s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="144" y="56" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="144" y="56" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.125s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.125s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="144" y="72" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="144" y="72" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.125s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.125s" dur="0.28s" fill="freeze"/>
     </rect><rect x="144" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.125s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.125s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="144" y="104" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="144" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.125s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.125s" dur="0.28s" fill="freeze"/>
     </rect><rect x="144" y="120" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
@@ -190,7 +190,7 @@
     </rect><rect x="192" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.200s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.200s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="192" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="192" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.200s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.200s" dur="0.28s" fill="freeze"/>
     </rect><rect x="192" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -202,7 +202,7 @@
     </rect><rect x="192" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.200s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.200s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="192" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="192" y="152" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.200s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.200s" dur="0.28s" fill="freeze"/>
     </rect><rect x="208" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -241,10 +241,10 @@
     </rect><rect x="224" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.250s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.250s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="224" y="136" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="224" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.250s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.250s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="224" y="152" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="224" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.250s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.250s" dur="0.28s" fill="freeze"/>
     </rect><rect x="240" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -253,7 +253,7 @@
     </rect><rect x="240" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.275s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.275s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="240" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="240" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.275s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.275s" dur="0.28s" fill="freeze"/>
     </rect><rect x="240" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -364,7 +364,7 @@
     </rect><rect x="320" y="104" width="12" height="12" rx="3" fill="#101827" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.400s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.400s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="320" y="120" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="320" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.400s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.400s" dur="0.28s" fill="freeze"/>
     </rect><rect x="320" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -433,13 +433,13 @@
     </rect><rect x="368" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.475s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.475s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="368" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="368" y="152" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.475s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.475s" dur="0.28s" fill="freeze"/>
     </rect><rect x="384" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.500s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.500s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="384" y="72" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="384" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.500s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.500s" dur="0.28s" fill="freeze"/>
     </rect><rect x="384" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
@@ -448,7 +448,7 @@
     </rect><rect x="384" y="104" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.500s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.500s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="384" y="120" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="384" y="120" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.500s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.500s" dur="0.28s" fill="freeze"/>
     </rect><rect x="384" y="136" width="12" height="12" rx="3" fill="#101827" opacity="0">
@@ -472,10 +472,10 @@
     </rect><rect x="400" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.525s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.525s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="400" y="136" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="400" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.525s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.525s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="400" y="152" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="400" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.525s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.525s" dur="0.28s" fill="freeze"/>
     </rect><rect x="416" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -487,7 +487,7 @@
     </rect><rect x="416" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.550s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.550s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="416" y="104" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="416" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.550s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.550s" dur="0.28s" fill="freeze"/>
     </rect><rect x="416" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -526,7 +526,7 @@
     </rect><rect x="448" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.600s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.600s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="448" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="448" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.600s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.600s" dur="0.28s" fill="freeze"/>
     </rect><rect x="448" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -535,7 +535,7 @@
     </rect><rect x="448" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.600s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.600s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="448" y="136" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="448" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.600s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.600s" dur="0.28s" fill="freeze"/>
     </rect><rect x="448" y="152" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -547,16 +547,16 @@
     </rect><rect x="464" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.625s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.625s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="464" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="464" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.625s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.625s" dur="0.28s" fill="freeze"/>
     </rect><rect x="464" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.625s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.625s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="464" y="120" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="464" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.625s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.625s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="464" y="136" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="464" y="136" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.625s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.625s" dur="0.28s" fill="freeze"/>
     </rect><rect x="464" y="152" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -565,13 +565,13 @@
     </rect><rect x="480" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.650s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.650s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="480" y="72" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="480" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.650s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.650s" dur="0.28s" fill="freeze"/>
     </rect><rect x="480" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.650s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.650s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="480" y="104" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="480" y="104" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.650s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.650s" dur="0.28s" fill="freeze"/>
     </rect><rect x="480" y="120" width="12" height="12" rx="3" fill="#101827" opacity="0">
@@ -730,10 +730,10 @@
     </rect><rect x="592" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.825s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.825s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="608" y="56" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="608" y="56" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.850s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.850s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="608" y="72" width="12" height="12" rx="3" fill="#a7f3d0" opacity="0">
+    </rect><rect x="608" y="72" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.850s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.850s" dur="0.28s" fill="freeze"/>
     </rect><rect x="608" y="88" width="12" height="12" rx="3" fill="#101827" opacity="0">
@@ -799,7 +799,7 @@
     </rect><rect x="656" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.925s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.925s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="656" y="88" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="656" y="88" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.925s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.925s" dur="0.28s" fill="freeze"/>
     </rect><rect x="656" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -808,13 +808,13 @@
     </rect><rect x="656" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.925s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.925s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="656" y="136" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="656" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.925s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.925s" dur="0.28s" fill="freeze"/>
     </rect><rect x="656" y="152" width="12" height="12" rx="3" fill="#101827" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.925s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.925s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="672" y="56" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="672" y="56" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.950s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.950s" dur="0.28s" fill="freeze"/>
     </rect><rect x="672" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -826,13 +826,13 @@
     </rect><rect x="672" y="104" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.950s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.950s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="672" y="120" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="672" y="120" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.950s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.950s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="672" y="136" width="12" height="12" rx="3" fill="#a7f3d0" opacity="0">
+    </rect><rect x="672" y="136" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.950s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.950s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="672" y="152" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
+    </rect><rect x="672" y="152" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.950s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="0.950s" dur="0.28s" fill="freeze"/>
     </rect><rect x="688" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -880,7 +880,7 @@
     </rect><rect x="720" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.025s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.025s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="720" y="72" width="12" height="12" rx="3" fill="#a7f3d0" opacity="0">
+    </rect><rect x="720" y="72" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.025s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.025s" dur="0.28s" fill="freeze"/>
     </rect><rect x="720" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -889,7 +889,7 @@
     </rect><rect x="720" y="104" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.025s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.025s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="720" y="120" width="12" height="12" rx="3" fill="#a7f3d0" opacity="0">
+    </rect><rect x="720" y="120" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.025s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.025s" dur="0.28s" fill="freeze"/>
     </rect><rect x="720" y="136" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -922,7 +922,7 @@
     </rect><rect x="752" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.075s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.075s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="752" y="72" width="12" height="12" rx="3" fill="#a7f3d0" opacity="0">
+    </rect><rect x="752" y="72" width="12" height="12" rx="3" fill="#22d3ee" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.075s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.075s" dur="0.28s" fill="freeze"/>
     </rect><rect x="752" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -964,7 +964,7 @@
     </rect><rect x="784" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.125s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.125s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="784" y="72" width="12" height="12" rx="3" fill="#0f766e" opacity="0">
+    </rect><rect x="784" y="72" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.125s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.125s" dur="0.28s" fill="freeze"/>
     </rect><rect x="784" y="88" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
@@ -1111,13 +1111,16 @@
     </rect><rect x="896" y="56" width="12" height="12" rx="3" fill="#134e4a" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.300s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.300s" dur="0.28s" fill="freeze"/>
-    </rect><rect x="896" y="72" width="12" height="12" rx="3" fill="#101827" opacity="0">
+    </rect><rect x="896" y="72" width="12" height="12" rx="3" fill="#a7f3d0" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="1.300s" dur="0.28s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.300s" dur="0.28s" fill="freeze"/>
+    </rect><rect x="896" y="88" width="12" height="12" rx="3" fill="#101827" opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="1.300s" dur="0.28s" fill="freeze"/>
       <animateTransform attributeName="transform" type="translate" values="0 6;0 0" begin="1.300s" dur="0.28s" fill="freeze"/>
     </rect></g>
   <text x="634" y="188" class="axis">less</text>
   <rect x="694" y="178" width="12" height="12" rx="3" fill="#101827"/><rect x="714" y="178" width="12" height="12" rx="3" fill="#134e4a"/><rect x="734" y="178" width="12" height="12" rx="3" fill="#0f766e"/><rect x="754" y="178" width="12" height="12" rx="3" fill="#22d3ee"/><rect x="774" y="178" width="12" height="12" rx="3" fill="#a7f3d0"/>
   <text x="802" y="188" class="axis">more</text>
-  <text x="24" y="184" class="meta">2,107 contributions | current streak 7d | longest 91d | busiest Friday</text>
-  <text x="24" y="204" class="accent">top day 2026-08-27 : 61 contributions</text>
+  <text x="24" y="184" class="meta">2,170 contributions | current streak 8d | longest 91d | busiest Monday</text>
+  <text x="24" y="204" class="accent">top day 2026-11-16 : 63 contributions</text>
 </svg>
