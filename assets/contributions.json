@@ -1,8 +1,8 @@
 {
   "username": "Nitin3560",
-  "fetched_at": "2026-11-21T13:11:38Z",
-  "total": 2176,
-  "current_streak": 12,
+  "fetched_at": "2026-11-22T13:00:17Z",
+  "total": 2177,
+  "current_streak": 13,
   "longest_streak": 91,
   "busiest_weekday": "Monday",
   "top_day": {
@@ -12,12 +12,6 @@
     "weekday": "Monday"
   },
   "days": [
-    {
-      "date": "2025-11-16",
-      "count": 0,
-      "level": 0,
-      "weekday": "Sunday"
-    },
     {
       "date": "2025-11-23",
       "count": 0,
@@ -331,10 +325,10 @@
       "weekday": "Sunday"
     },
     {
-      "date": "2025-11-17",
+      "date": "2026-11-22",
       "count": 0,
       "level": 0,
-      "weekday": "Monday"
+      "weekday": "Sunday"
     },
     {
       "date": "2025-11-24",
@@ -649,12 +643,6 @@
       "weekday": "Monday"
     },
     {
-      "date": "2025-11-18",
-      "count": 0,
-      "level": 0,
-      "weekday": "Tuesday"
-    },
-    {
       "date": "2025-11-25",
       "count": 0,
       "level": 0,
@@ -965,12 +953,6 @@
       "count": 1,
       "level": 1,
       "weekday": "Tuesday"
-    },
-    {
-      "date": "2025-11-19",
-      "count": 0,
-      "level": 0,
-      "weekday": "Wednesday"
     },
     {
       "date": "2025-11-26",
@@ -1285,12 +1267,6 @@
       "weekday": "Wednesday"
     },
     {
-      "date": "2025-11-20",
-      "count": 0,
-      "level": 0,
-      "weekday": "Thursday"
-    },
-    {
       "date": "2025-11-27",
       "count": 0,
       "level": 0,
@@ -1601,12 +1577,6 @@
       "count": 1,
       "level": 1,
       "weekday": "Thursday"
-    },
-    {
-      "date": "2025-11-21",
-      "count": 0,
-      "level": 0,
-      "weekday": "Friday"
     },
     {
       "date": "2025-11-28",
@@ -1921,12 +1891,6 @@
       "weekday": "Friday"
     },
     {
-      "date": "2025-11-22",
-      "count": 0,
-      "level": 0,
-      "weekday": "Saturday"
-    },
-    {
       "date": "2025-11-29",
       "count": 0,
       "level": 0,
@@ -2234,8 +2198,8 @@
     },
     {
       "date": "2026-11-21",
-      "count": 0,
-      "level": 0,
+      "count": 1,
+      "level": 1,
       "weekday": "Saturday"
     }
   ]
